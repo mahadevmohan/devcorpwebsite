@@ -6,6 +6,10 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 
+const dateString = z.union([z.string(), z.date()]).transform((v) => {
+  return typeof v === "string" ? v : v.toISOString();
+});
+
 export const projectSchema = z.object({
   title: z.string(),
   slug: z.string(),
@@ -17,8 +21,8 @@ export const projectSchema = z.object({
   demoUrl: z.string().url().optional(),
   repoUrl: z.string().url().optional(),
   thumbnail: z.string().optional(),
-  publishedAt: z.string().optional(),
-  updatedAt: z.string().optional()
+  publishedAt: dateString.optional(),
+  updatedAt: dateString.optional()
 });
 export type ProjectFrontmatter = z.infer<typeof projectSchema>;
 
@@ -29,8 +33,8 @@ export const postSchema = z.object({
   excerpt: z.string().optional(),
   tags: z.array(z.string()).default([]),
   coverImage: z.string().optional(),
-  publishedAt: z.string(),
-  updatedAt: z.string().optional()
+  publishedAt: dateString,
+  updatedAt: dateString.optional()
 });
 export type PostFrontmatter = z.infer<typeof postSchema>;
 
