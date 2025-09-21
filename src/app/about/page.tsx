@@ -1,10 +1,169 @@
 export default function AboutPage() {
   return (
-    <main className="max-w-3xl mx-auto p-8 space-y-4">
-      <h1 className="text-3xl font-bold">About Devcorp</h1>
-      <p className="text-gray-600">
-        We build innovative projects and share our development journey through code, creativity, and continuous learning.
-      </p>
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-neutral-900 py-20">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h1 className="text-5xl font-bold text-white mb-4">About Us</h1>
+          <p className="text-xl text-neutral-300">Meet the team behind DevCorp</p>
+        </div>
+      </section>
+
+      {/* Our Mission Section */}
+      <section className="bg-neutral-50 py-16">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold text-neutral-900 mb-6">Our Mission</h2>
+          <p className="text-lg text-neutral-700 leading-relaxed">
+            DevCorp is our creative playground. We build projects to learn, grow, and share. Our goal is to become better software engineers by solving real problems and shipping real code.
+          </p>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="bg-neutral-50 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* Mahadev Mohan */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-2">Mahadev Mohan</h3>
+              <p className="text-neutral-600 mb-4">CEO & Founder</p>
+              <div className="space-y-4 text-neutral-700">
+                <p className="font-medium">Short professional bio (skills, focus)</p>
+                <p className="text-sm italic">Fun fact: &ldquo;Can debug with lo-fi beats on loop&rdquo;</p>
+                <p className="leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="aspect-square bg-neutral-200 rounded-lg flex items-center justify-center">
+                <svg className="w-16 h-16 text-neutral-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-3.45 9-9V7l-10-5z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Paramraj Singh Machre */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2">
+              <div className="aspect-square bg-neutral-200 rounded-lg flex items-center justify-center">
+                <svg className="w-16 h-16 text-neutral-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-3.45 9-9V7l-10-5z" />
+                </svg>
+              </div>
+            </div>
+            <div className="order-1">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-2">Paramraj Singh Machre</h3>
+              <p className="text-neutral-600 mb-4">Lead Developer</p>
+              <div className="space-y-4 text-neutral-700">
+                <p className="font-medium">Short professional bio (skills, focus)</p>
+                <p className="text-sm italic">Fun fact: &ldquo;Can debug with lo-fi beats on loop&rdquo;</p>
+                <p className="leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Values Section */}
+      <section className="bg-neutral-50 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold text-neutral-900 mb-4">Our Values</h2>
+            <p className="text-lg text-neutral-600">What drives us to build?</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Learn by Building */}
+            <div className="space-y-4">
+              <div className="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
+                <span className="text-neutral-600 font-bold">i</span>
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900">Learn by Building</h3>
+              <p className="text-neutral-700">
+                We believe in hands-on learning. Every project is an opportunity to master new technologies and solve complex problems.
+              </p>
+            </div>
+
+            {/* Stay Curious */}
+            <div className="space-y-4">
+              <div className="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
+                <span className="text-neutral-600 font-bold">i</span>
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900">Stay Curious</h3>
+              <p className="text-neutral-700">
+                Technology evolves rapidly. We maintain our curiosity and continuously explore new frameworks, tools, and methodologies.
+              </p>
+            </div>
+
+            {/* Growth Over Perfection */}
+            <div className="space-y-4">
+              <div className="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
+                <span className="text-neutral-600 font-bold">i</span>
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900">Growth Over Perfection</h3>
+              <p className="text-neutral-700">
+                We prioritize learning and improvement over perfection. Shipping code and learning from feedback drives our progress.
+              </p>
+            </div>
+
+            {/* Teamwork First */}
+            <div className="space-y-4">
+              <div className="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
+                <span className="text-neutral-600 font-bold">i</span>
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900">Teamwork First</h3>
+              <p className="text-neutral-700">
+                Collaboration amplifies our individual strengths. We work together, share knowledge, and support each other&apos;s growth.
+              </p>
+            </div>
+
+            {/* Solve Real Problems */}
+            <div className="space-y-4">
+              <div className="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
+                <span className="text-neutral-600 font-bold">i</span>
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900">Solve Real Problems</h3>
+              <p className="text-neutral-700">
+                We focus on building solutions that address genuine needs and create meaningful impact for users and businesses.
+              </p>
+            </div>
+
+            {/* Share and Inspire */}
+            <div className="space-y-4">
+              <div className="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
+                <span className="text-neutral-600 font-bold">i</span>
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900">Share and Inspire</h3>
+              <p className="text-neutral-700">
+                Knowledge grows when shared. We document our journey, share insights, and inspire others in the developer community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="bg-neutral-50 py-16">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-neutral-900 mb-4">Follow the latest trends</h2>
+          <p className="text-lg text-neutral-600 mb-8">With our daily newsletter</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="you@example.com"
+              className="flex-1 px-4 py-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-400 text-neutral-900 placeholder-neutral-500"
+            />
+            <button className="w-full sm:w-auto px-6 py-3 bg-neutral-900 text-white rounded-md hover:bg-neutral-800 transition-colors">
+              Submit
+            </button>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }
