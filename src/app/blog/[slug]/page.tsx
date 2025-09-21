@@ -14,7 +14,6 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
         {meta.excerpt && <p className="text-gray-600">{meta.excerpt}</p>}
       </header>
       <article className="prose dark:prose-invert max-w-none">
-        {/* @ts-expect-error Async Server Component */}
         {mdx.content}
       </article>
     </main>

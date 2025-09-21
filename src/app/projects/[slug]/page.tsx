@@ -6,7 +6,7 @@ export async function generateStaticParams() {
   return projects.map(p => ({ slug: p.slug }));
 }
 
-export default async function ProjectDetailPage({ params }: { params: { slug: string }}) {
+export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
   const { meta, mdx } = await getProjectBySlug(params.slug);
   const posts = (await getAllPosts()).filter(p => p.projectSlug === params.slug);
   return (
@@ -17,7 +17,6 @@ export default async function ProjectDetailPage({ params }: { params: { slug: st
       </div>
       <div className="text-gray-600">{meta.summary}</div>
       <div className="prose dark:prose-invert max-w-none">
-        {/* @ts-expect-error Async Server Component */}
         {mdx.content}
       </div>
       {posts.length > 0 && (
