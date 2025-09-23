@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import ActiveLink from "@/components/ActiveLink";
+import Footer from "@/components/Footer";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -29,15 +32,21 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header className="border-b">
-          <nav className="max-w-5xl mx-auto p-4 flex gap-4 text-sm">
-            <Link href="/" className="hover:underline">Home</Link>
-            <Link href="/projects" className="hover:underline">Projects</Link>
-            <Link href="/blog" className="hover:underline">Blog</Link>
-            <Link href="/about" className="hover:underline">About</Link>
-            <Link href="/contact" className="hover:underline">Contact</Link>
+          <nav className="max-w-5xl mx-auto p-4 flex items-center justify-between text-sm">
+            <Link href="/" className="shrink-0" aria-label="Devcorp Home">
+              <Image src="/Images/logo.png" alt="Devcorp logo" width={36} height={36} />
+            </Link>
+            <div className="ml-auto pr-4 flex items-center gap-3">
+              <ActiveLink href="/">Home</ActiveLink>
+              <ActiveLink href="/projects">Projects</ActiveLink>
+              <ActiveLink href="/blog">Blog</ActiveLink>
+              <ActiveLink href="/about">About</ActiveLink>
+              <ActiveLink href="/contact">Contact</ActiveLink>
+            </div>
           </nav>
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );

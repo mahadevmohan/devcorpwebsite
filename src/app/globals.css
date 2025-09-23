@@ -1,21 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base neutrals (brand palette) */
+  --black: #000000;        /* Black */
+  --davy-gray: #4a4a4a;    /* Davy's gray */
+  --silver: #b3b3b3;       /* Silver */
+  --seasalt: #f8f7f5;      /* Seasalt */
+  --alabaster: #f5f2e9;    /* Alabaster */
+
+  /* Semantic tokens (light) */
+  --background: var(--seasalt);
+  --surface: var(--alabaster);
+  --border: var(--davy-gray);
+  --muted: var(--silver);
+  --foreground: var(--black);
 }
 
 @theme inline {
+  /* Expose semantic colors as Tailwind tokens */
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
   --color-foreground: var(--foreground);
+
+  /* Expose base palette as Tailwind tokens */
+  --color-black: var(--black);
+  --color-davy-gray: var(--davy-gray);
+  --color-silver: var(--silver);
+  --color-seasalt: var(--seasalt);
+  --color-alabaster: var(--alabaster);
+
+  /* Fonts from Next fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Lock colors to the mockup palette even in dark mode */
+    --background: var(--seasalt);
+    --surface: var(--alabaster);
+    --border: var(--davy-gray);
+    --muted: var(--silver);
+    --foreground: var(--black);
   }
 }
 
