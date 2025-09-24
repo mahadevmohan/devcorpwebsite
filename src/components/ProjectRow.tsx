@@ -26,88 +26,94 @@ export default function ProjectRow({
   const hasDemo = Boolean(demoUrl);
 
   return (
-    <article className="grid grid-cols-12 gap-6 rounded-2xl bg-stone-50 p-4 shadow-sm dark:bg-neutral-950/60">
-      {/* Thumbnail */}
-      <div className="col-span-12 md:col-span-5">
-        <div className="relative w-full overflow-hidden rounded-xl bg-neutral-200 dark:bg-neutral-800">
-          {thumbnail ? (
-            <Image
-              src={thumbnail}
-              alt={`${title} thumbnail`}
-              width={960}
-              height={540}
-              className="h-full w-full object-cover"
-            />
-          ) : (
-            <div className="aspect-[16/9] flex items-center justify-center">
-              {/* simple placeholder icon */}
-              <svg
-                width="64"
-                height="64"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                className="opacity-50"
-              >
-                <path
-                  d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5zm2 0v14h14V5H5zm2 10 3-4 2 3 3-4 2 5H7z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="col-span-12 md:col-span-7 flex flex-col justify-center">
-        <header>
-          <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
-            <Link href={`/projects/${slug}`} className="hover:underline">
-              {title}
-            </Link>
-          </h3>
-
-          {/* “Tech Stack” pill (matches the small green tag in your mock) */}
-          <div className="mt-2">
-            <span className="inline-flex items-center rounded-md bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-700 dark:bg-emerald-300/20 dark:text-emerald-300">
-              Tech Stack
-            </span>
-            {techStack.length > 0 && (
-              <span className="ml-2 text-xs text-neutral-500 dark:text-neutral-400">
-                {techStack.slice(0, 4).join(" · ")}
-                {techStack.length > 4 ? " +" + (techStack.length - 4) : ""}
-              </span>
+    <article className="bg-white rounded-lg p-8 shadow-sm border border-neutral-200">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        {/* Thumbnail */}
+        <div className="order-2 lg:order-1">
+          <div className="relative w-full overflow-hidden rounded-xl bg-neutral-200">
+            {thumbnail ? (
+              <Image
+                src={thumbnail}
+                alt={`${title} thumbnail`}
+                width={960}
+                height={540}
+                className="h-full w-full object-cover"
+              />
+            ) : (
+              <div className="aspect-[16/9] flex items-center justify-center">
+                {/* simple placeholder icon */}
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  className="opacity-50 text-neutral-400"
+                >
+                  <path
+                    d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5zm2 0v14h14V5H5zm2 10 3-4 2 3 3-4 2 5H7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
             )}
           </div>
-        </header>
+        </div>
 
-        <p className="mt-2 line-clamp-3 text-sm text-neutral-600 dark:text-neutral-300">
-          {summary}
-        </p>
+        {/* Content */}
+        <div className="order-1 lg:order-2">
+          <header>
+            <h3 className="text-2xl font-bold text-neutral-900 mb-2">
+              <Link href={`/projects/${slug}`} className="hover:text-neutral-600 transition-colors">
+                {title}
+              </Link>
+            </h3>
 
-        {/* Buttons */}
-        <div className="mt-4 flex gap-3">
-          <a
-            href={hasDemo ? demoUrl! : undefined}
-            target="_blank"
-            rel="noreferrer"
-            aria-disabled={!hasDemo}
-            className={cn(
-              "inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition",
-              hasDemo
-                ? "bg-neutral-900 text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-neutral-400"
-                : "cursor-not-allowed bg-neutral-300 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-500"
+            {/* Tech Stack */}
+            {techStack.length > 0 && (
+              <div className="mb-4">
+                <h4 className="text-sm font-semibold text-neutral-600 mb-2">Tech Stack</h4>
+                <div className="flex flex-wrap gap-2">
+                  {techStack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-neutral-100 text-neutral-700 rounded-full text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             )}
-          >
-            Go to project
-          </a>
+          </header>
 
-          <Link
-            href={`/projects/${slug}`}
-            className="inline-flex items-center justify-center rounded-md border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-800 transition hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-800"
-          >
-            Go to blog
-          </Link>
+          <p className="text-neutral-700 leading-relaxed mb-6">
+            {summary}
+          </p>
+
+          {/* Buttons */}
+          <div className="flex gap-3">
+            <a
+              href={hasDemo ? demoUrl! : undefined}
+              target="_blank"
+              rel="noreferrer"
+              aria-disabled={!hasDemo}
+              className={cn(
+                "inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition",
+                hasDemo
+                  ? "bg-neutral-900 text-white hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-400"
+                  : "cursor-not-allowed bg-neutral-300 text-neutral-600"
+              )}
+            >
+              Go to project
+            </a>
+
+            <Link
+              href={`/projects/${slug}`}
+              className="inline-flex items-center justify-center rounded-md border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-800 transition hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-400"
+            >
+              Go to blog
+            </Link>
+          </div>
         </div>
       </div>
     </article>

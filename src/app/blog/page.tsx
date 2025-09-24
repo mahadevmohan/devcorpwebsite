@@ -17,7 +17,7 @@ export default async function BlogIndexPage() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold text-white mb-4">Dev Journal</h1>
           <p className="text-xl text-neutral-300">
-            Behind the code: what we built, how we built it, and what we learned along the way.
+            Behind the code: what we built, how we built it, and what we learned along the way
           </p>
         </div>
       </section>

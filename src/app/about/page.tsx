@@ -5,7 +5,7 @@ export default function AboutPage() {
       <section className="bg-neutral-900 py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold text-white mb-4">About Us</h1>
-          <p className="text-xl text-neutral-300">Meet the team behind DevCorp</p>
+          <p className="text-xl text-neutral-300">Meet the team behind devcorp</p>
         </div>
       </section>
 
@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-neutral-900 mb-6">Our Mission</h2>
           <p className="text-lg text-neutral-700 leading-relaxed">
-            DevCorp is our creative playground. We build projects to learn, grow, and share. Our goal is to become better software engineers by solving real problems and shipping real code.
+            devcorp is our creative playground. We build projects to learn, grow, and share. Our goal is to become better software engineers by solving real problems and shipping real code.
           </p>
         </div>
       </section>

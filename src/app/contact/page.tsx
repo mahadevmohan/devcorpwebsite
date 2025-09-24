@@ -6,7 +6,7 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold text-white mb-4">Contact Us</h1>
           <p className="text-xl text-neutral-300">
-            Get in touch with us to discuss projects, collaborations, or just say hello.
+            Get in touch with us to discuss projects, collaborations, or just say hello
           </p>
         </div>
       </section>

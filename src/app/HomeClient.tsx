@@ -33,13 +33,13 @@ export default function HomeClient({ projects }: HomeClientProps) {
     <>
       {/* HERO */}
       <section className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
-        <motion.div 
+        <motion.div
           className="max-w-5xl mx-auto px-8 text-center space-y-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.h1 
+          <motion.h1
             className="text-5xl md:text-6xl font-bold tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,13 +47,13 @@ export default function HomeClient({ projects }: HomeClientProps) {
           >
             Code. Create. Conquer.
           </motion.h1>
-          <motion.p 
-            className="text-lg text-muted/80"
+          <motion.p
+            className="text-xl text-neutral-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Devcorp
+            devcorp
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -102,8 +102,8 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 className="bg-davy-gray text-seasalt rounded-lg p-6 hover:shadow-lg transition-shadow"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ 
-                  duration: 0.5, 
+                transition={{
+                  duration: 0.5,
                   delay: index * 0.1,
                   ease: "easeOut"
                 }}
@@ -125,8 +125,8 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 className="bg-davy-gray text-seasalt rounded-lg p-6 hover:shadow-lg transition-shadow"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ 
-                  duration: 0.5, 
+                transition={{
+                  duration: 0.5,
                   delay: (projects.length + i) * 0.1,
                   ease: "easeOut"
                 }}
