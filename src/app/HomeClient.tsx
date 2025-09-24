@@ -96,7 +96,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
-            {projects.slice(0, 6).map((p, index) => (
+            {projects.map((p, index) => (
               <motion.div
                 key={p.slug}
                 className="bg-davy-gray text-seasalt rounded-lg p-6 hover:shadow-lg transition-shadow"
@@ -116,25 +116,6 @@ export default function HomeClient({ projects }: HomeClientProps) {
                   </Link>
                 </h3>
                 <p className="text-sm text-silver">{p.summary}</p>
-              </motion.div>
-            ))}
-            {/* Fillers to keep the grid feel if few projects exist */}
-            {projects.length < 6 && Array.from({ length: 6 - projects.length }).map((_, i) => (
-              <motion.div
-                key={`placeholder-${i}`}
-                className="bg-davy-gray text-seasalt rounded-lg p-6 hover:shadow-lg transition-shadow"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.5,
-                  delay: (projects.length + i) * 0.1,
-                  ease: "easeOut"
-                }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.02 }}
-              >
-                <h3 className="font-semibold text-seasalt mb-2">TBD</h3>
-                <p className="text-sm text-silver">Coming soon</p>
               </motion.div>
             ))}
           </div>

@@ -1,0 +1,45 @@
+---
+title: Building Our Portfolio Website
+slug: portfolio-website-development
+projectSlug: portfolio-website
+excerpt: The journey of building a modern portfolio website with Next.js and MDX
+publishedAt: 2024-12-20
+---
+
+## The Challenge
+
+We needed a portfolio website that could showcase our projects dynamically while maintaining excellent performance and developer experience.
+
+## Our Approach
+
+We chose Next.js with the App Router for its excellent performance characteristics and built-in optimizations. The key was creating a content management system using MDX files that would automatically update all pages when new projects were added.
+
+## Key Decisions
+
+### 1. MDX for Content Management
+Using MDX files with frontmatter allows us to manage both projects and blog posts in a version-controlled, developer-friendly way.
+
+### 2. Centralized Data Source
+All pages pull from the same `getAllProjects()` function, ensuring consistency across the entire site.
+
+### 3. Static Generation
+Next.js static generation ensures fast loading times and excellent SEO performance.
+
+## Technical Implementation
+
+The system works by:
+1. Reading MDX files from the content directory
+2. Parsing frontmatter with Zod validation
+3. Generating static pages at build time
+4. Automatically updating all references when content changes
+
+## Results
+
+- **Build Time**: Under 30 seconds
+- **Lighthouse Score**: 100/100
+- **Developer Experience**: Add a project in one place, it appears everywhere
+- **Maintainability**: Single source of truth for all project data
+
+## Lessons Learned
+
+The key to a maintainable portfolio is having a single source of truth. By centralizing all project data in MDX files, we eliminated the need to update multiple places when adding new content.

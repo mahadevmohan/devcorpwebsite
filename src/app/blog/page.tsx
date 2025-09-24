@@ -116,64 +116,6 @@ export default async function BlogIndexPage() {
                 </article>
               );
             })}
-
-            {/* Placeholder for future posts */}
-            <article className="bg-white rounded-lg p-8 shadow-sm border border-neutral-200 border-dashed">
-              <h2 className="text-2xl font-bold text-neutral-900 mb-2">AI Generated Picture Checker</h2>
-              <time className="text-sm text-neutral-500">Coming Soon</time>
-
-              <div className="mt-6 space-y-4 text-neutral-700">
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">Intro Paragraph:</h4>
-                  <p className="text-sm italic">
-                    Why you built it, what problem it solves, or what inspired it.
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">Challenges & Learnings:</h4>
-                  <p className="text-sm italic">
-                    A short bullet list or paragraph on what you struggled with and overcame.
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">Visuals:</h4>
-                  <p className="text-sm italic">
-                    A screenshot gallery, or an embedded video (demo walk-through).
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            {/* Another placeholder */}
-            <article className="bg-white rounded-lg p-8 shadow-sm border border-neutral-200 border-dashed">
-              <h2 className="text-2xl font-bold text-neutral-900 mb-2">TBD</h2>
-              <time className="text-sm text-neutral-500">Coming Soon</time>
-
-              <div className="mt-6 space-y-4 text-neutral-700">
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">Intro Paragraph:</h4>
-                  <p className="text-sm italic">
-                    Why you built it, what problem it solves, or what inspired it.
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">Challenges & Learnings:</h4>
-                  <p className="text-sm italic">
-                    A short bullet list or paragraph on what you struggled with and overcame.
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">Visuals:</h4>
-                  <p className="text-sm italic">
-                    A screenshot gallery, or an embedded video (demo walk-through).
-                  </p>
-                </div>
-              </div>
-            </article>
           </div>
         </div>
       </section>
