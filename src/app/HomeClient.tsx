@@ -32,7 +32,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
   return (
     <>
       {/* HERO */}
-      <section className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center bg-black text-seasalt overflow-hidden">
         <motion.div
           className="max-w-5xl mx-auto px-8 text-center space-y-6"
           initial={{ opacity: 0, y: 30 }}
@@ -48,7 +48,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
             Code. Create. Conquer.
           </motion.h1>
           <motion.p
-            className="text-xl text-neutral-300"
+            className="text-xl text-silver"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -72,7 +72,7 @@ export default function HomeClient({ projects }: HomeClientProps) {
         {/* Scroll Cue */}
         <motion.button
           onClick={scrollToProjects}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 hover:text-white transition-colors"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-silver hover:text-seasalt transition-colors"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}

@@ -9,7 +9,7 @@ export default function ActiveLink({ href, children }: { href: string; children:
   const base = "px-3 py-1 rounded transition-colors";
   const hover = "hover:bg-davy-gray hover:text-seasalt";
   const className = isActive
-    ? `${base} bg-black text-white`
+    ? `${base} bg-black text-seasalt`
     : `${base} ${hover}`;
   return (
     <Link href={href} className={className} aria-current={isActive ? "page" : undefined}>

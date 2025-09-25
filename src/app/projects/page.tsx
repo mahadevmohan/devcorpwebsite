@@ -9,17 +9,17 @@ export default async function ProjectsPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-neutral-900 py-20">
+      <section className="bg-black py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">Project Demos</h1>
-          <p className="text-xl text-neutral-300">
+          <h1 className="text-5xl font-bold text-seasalt mb-4">Project Demos</h1>
+          <p className="text-xl text-silver">
             See our projects in action — from idea to deployment
           </p>
         </div>
       </section>
 
       {/* Projects List Section */}
-      <section className="bg-neutral-50 py-16">
+      <section className="bg-seasalt py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="space-y-8">
             {projects.map((p) => (

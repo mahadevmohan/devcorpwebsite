@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-neutral-200">
+      <div className="border-t border-davy-gray">
         <div className="max-w-5xl mx-auto px-6 py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-davy-gray">
             <p>&copy; 2024 Devcorp. All rights reserved.</p>

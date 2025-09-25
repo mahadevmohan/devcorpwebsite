@@ -26,11 +26,11 @@ export default function ProjectRow({
   const hasDemo = Boolean(demoUrl);
 
   return (
-    <article className="bg-white rounded-lg p-8 shadow-sm border border-neutral-200">
+    <article className="bg-seasalt rounded-lg p-8 shadow-sm border border-davy-gray">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Thumbnail */}
         <div className="order-2 lg:order-1">
-          <div className="relative w-full overflow-hidden rounded-xl bg-neutral-200">
+          <div className="relative w-full overflow-hidden rounded-xl bg-alabaster">
             {thumbnail ? (
               <Image
                 src={thumbnail}
@@ -47,7 +47,7 @@ export default function ProjectRow({
                   height="64"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
-                  className="opacity-50 text-neutral-400"
+                  className="opacity-50 text-davy-gray"
                 >
                   <path
                     d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5zm2 0v14h14V5H5zm2 10 3-4 2 3 3-4 2 5H7z"
@@ -62,8 +62,8 @@ export default function ProjectRow({
         {/* Content */}
         <div className="order-1 lg:order-2">
           <header>
-            <h3 className="text-2xl font-bold text-neutral-900 mb-2">
-              <Link href={`/projects/${slug}`} className="hover:text-neutral-600 transition-colors">
+            <h3 className="text-2xl font-bold text-black mb-2">
+              <Link href={`/projects/${slug}`} className="hover:text-davy-gray transition-colors">
                 {title}
               </Link>
             </h3>
@@ -71,12 +71,12 @@ export default function ProjectRow({
             {/* Tech Stack */}
             {techStack.length > 0 && (
               <div className="mb-4">
-                <h4 className="text-sm font-semibold text-neutral-600 mb-2">Tech Stack</h4>
+                <h4 className="text-sm font-semibold text-davy-gray mb-2">Tech Stack</h4>
                 <div className="flex flex-wrap gap-2">
                   {techStack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-neutral-100 text-neutral-700 rounded-full text-sm"
+                      className="px-3 py-1 bg-alabaster text-davy-gray rounded-full text-sm"
                     >
                       {tech}
                     </span>
@@ -86,7 +86,7 @@ export default function ProjectRow({
             )}
           </header>
 
-          <p className="text-neutral-700 leading-relaxed mb-6">
+          <p className="text-davy-gray leading-relaxed mb-6">
             {summary}
           </p>
 
@@ -100,8 +100,8 @@ export default function ProjectRow({
               className={cn(
                 "inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition",
                 hasDemo
-                  ? "bg-neutral-900 text-white hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-400"
-                  : "cursor-not-allowed bg-neutral-300 text-neutral-600"
+                  ? "bg-black text-seasalt hover:bg-davy-gray focus:outline-none focus:ring-2 focus:ring-davy-gray"
+                  : "cursor-not-allowed bg-silver text-davy-gray"
               )}
             >
               Go to project
@@ -109,7 +109,7 @@ export default function ProjectRow({
 
             <Link
               href={`/projects/${slug}`}
-              className="inline-flex items-center justify-center rounded-md border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-800 transition hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-400"
+              className="inline-flex items-center justify-center rounded-md border border-davy-gray px-4 py-2 text-sm font-medium text-black transition hover:bg-alabaster focus:outline-none focus:ring-2 focus:ring-davy-gray"
             >
               Go to blog
             </Link>

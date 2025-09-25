@@ -15,7 +15,7 @@ export default async function ProjectDetailPage({ params }: { params: { slug: st
         <h1 className="text-3xl font-bold">{meta.title}</h1>
         <Link href="/projects" className="text-sm underline">Back</Link>
       </div>
-      <div className="text-gray-600">{meta.summary}</div>
+      <div className="text-davy-gray">{meta.summary}</div>
       <div className="prose dark:prose-invert max-w-none">
         {mdx.content}
       </div>
