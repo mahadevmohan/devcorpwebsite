@@ -33,6 +33,16 @@ export default function AboutPage() {
                 <p className="leading-relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
+                <div className="pt-4">
+                  <a
+                    href="/Resume/OfficialResume2025.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-4 py-2 bg-black text-seasalt rounded-md hover:bg-davy-gray transition-colors"
+                  >
+                    Résumé
+                  </a>
+                </div>
               </div>
             </div>
             <div className="order-1 lg:order-2">
@@ -62,6 +72,16 @@ export default function AboutPage() {
                 <p className="leading-relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
+                <div className="pt-4">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-4 py-2 bg-black text-seasalt rounded-md hover:bg-davy-gray transition-colors"
+                  >
+                    Résumé
+                  </a>
+                </div>
               </div>
             </div>
           </div>
