@@ -48,9 +48,9 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              
-                
-                <div className="aspect-square bg-alabaster rounded-lg overflow-hidden">
+
+
+              <div className="aspect-square bg-alabaster rounded-lg overflow-hidden">
                 <Image
                   src="/Images/mahadev.jpg"
                   alt="Mahadev Mohan"
@@ -58,12 +58,14 @@ export default function AboutPage() {
                   height={400}
                   className="w-full h-full object-cover object-[100%_50%]"
                 />
-                </div>
+              </div>
             </div>
           </div>
 
           {/* Paramraj Singh Machre */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            {/* Image Section */}
             <div className="order-2">
               <div className="aspect-square bg-alabaster rounded-lg overflow-hidden">
                 <Image
@@ -75,14 +77,22 @@ export default function AboutPage() {
                 />
               </div>
             </div>
-            <div className="order-1">
+
+            {/* Bio Section */}
+            <div className="order-1 lg:order-2">
               <h3 className="text-2xl font-bold text-black mb-2">Paramraj Singh Machre</h3>
-              <p className="text-davy-gray mb-4">Lead Developer</p>
+              <p className="text-davy-gray mb-4">Founding Software Developer</p>
               <div className="space-y-4 text-davy-gray">
-                <p className="font-medium">Short professional bio (skills, focus)</p>
-                <p className="text-sm italic">Fun fact: &ldquo;Can debug with lo-fi beats on loop&rdquo;</p>
                 <p className="leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Hi, I’m <span className="font-semibold">Paramraj</span> — a Computer Science new grad from UMD with a passion
+                  for building scalable, user-friendly systems. I love turning ideas into projects that blend clean code, smart
+                  design, and a bit of creativity. I’ve worked across full-stack development, data engineering, and AI/ML, and
+                  I’m always looking for new ways to learn and push boundaries.
+                </p>
+
+                <p className="text-sm italic">
+                  Fun fact: I’ve listened to <em>Circles</em> by Post Malone over 1,800 times on Spotify since 2021 — and I’m
+                  still not tired of it.
                 </p>
                 <div className="pt-4">
                   <a
