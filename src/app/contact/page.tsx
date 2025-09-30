@@ -35,7 +35,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-black mb-1">Email</h3>
-                    <p className="text-davy-gray">hello@devcorp.com</p>
+                    <p className="text-davy-gray">devcorptechllc@gmail.com</p>
                     <p className="text-sm text-silver">We&apos;ll get back to you within 24 hours</p>
                   </div>
                 </div>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-black mb-1">Location</h3>
-                    <p className="text-davy-gray">San Francisco, CA</p>
+                    <p className="text-davy-gray">Chicago, IL</p>
                     <p className="text-sm text-silver">Remote-first team</p>
                   </div>
                 </div>

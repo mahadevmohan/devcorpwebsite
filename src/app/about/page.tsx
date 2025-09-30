@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen">
@@ -57,10 +59,14 @@ export default function AboutPage() {
           {/* Paramraj Singh Machre */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2">
-              <div className="aspect-square bg-alabaster rounded-lg flex items-center justify-center">
-                <svg className="w-16 h-16 text-davy-gray" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-3.45 9-9V7l-10-5z" />
-                </svg>
+              <div className="aspect-square bg-alabaster rounded-lg overflow-hidden">
+                <Image
+                  src="/Images/paramraj-photo.jpg"
+                  alt="Paramraj Singh Machre"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover object-[100%_50%]"
+                />
               </div>
             </div>
             <div className="order-1">
@@ -74,7 +80,7 @@ export default function AboutPage() {
                 </p>
                 <div className="pt-4">
                   <a
-                    href="#"
+                    href="/Resume/ParamrajSinghMachre_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-4 py-2 bg-black text-seasalt rounded-md hover:bg-davy-gray transition-colors"
