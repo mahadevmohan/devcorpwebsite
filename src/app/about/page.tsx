@@ -48,11 +48,17 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <div className="aspect-square bg-alabaster rounded-lg flex items-center justify-center">
-                <svg className="w-16 h-16 text-davy-gray" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 9 5.16-.74 9-3.45 9-9V7l-10-5z" />
-                </svg>
-              </div>
+              
+                
+                <div className="aspect-square bg-alabaster rounded-lg overflow-hidden">
+                <Image
+                  src="/Images/mahadev.jpg"
+                  alt="Mahadev Mohan"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover object-[100%_50%]"
+                />
+                </div>
             </div>
           </div>
 
