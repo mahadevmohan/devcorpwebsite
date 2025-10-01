@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { Github, Instagram, Youtube, Linkedin } from "lucide-react";
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen">
@@ -49,7 +52,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-black mb-1">Location</h3>
-                    <p className="text-davy-gray">Chicago, IL</p>
+                    <p className="text-davy-gray">Peoria, IL</p>
                     <p className="text-sm text-silver">Remote-first team</p>
                   </div>
                 </div>
@@ -63,7 +66,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-black mb-1">Response Time</h3>
                     <p className="text-davy-gray">Usually within 24 hours</p>
-                    <p className="text-sm text-silver">Monday - Friday, 9 AM - 6 PM PST</p>
+                    <p className="text-sm text-silver">Monday - Friday, 9 AM - 6 PM CST</p>
                   </div>
                 </div>
               </div>
@@ -72,17 +75,15 @@ export default function ContactPage() {
               <div className="pt-8 border-t border-neutral-200">
                 <h3 className="font-semibold text-black mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors">
-                    <span className="text-davy-gray font-semibold">X</span>
+                  <a href="https://www.linkedin.com/company/devcorptech/" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="w-5 h-5 text-davy-gray" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors">
-                    <span className="text-davy-gray font-semibold">LI</span>
+                  
+                  <a href="#" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
+                    <Github className="w-5 h-5 text-davy-gray" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors">
-                    <span className="text-davy-gray font-semibold">GH</span>
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors">
-                    <span className="text-davy-gray font-semibold">YT</span>
+                  <a href="#" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
+                    <Youtube className="w-5 h-5 text-davy-gray" />
                   </a>
                 </div>
               </div>

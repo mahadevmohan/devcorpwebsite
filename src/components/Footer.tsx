@@ -16,11 +16,9 @@ export default function Footer() {
             Code. Create. Conquer. Building the future through innovative software development.
           </p>
           <div className="flex items-center gap-3 text-davy-gray">
-            <Link href="#" aria-label="X" target="_blank"><X size={16} /></Link>
-            <Link href="#" aria-label="Instagram" target="_blank"><Instagram size={16} /></Link>
-            <Link href="#" aria-label="Github" target="_blank"><Github size={16} /></Link>
-            <Link href="#" aria-label="YouTube" target="_blank"><Youtube size={16} /></Link>
             <Link href="https://www.linkedin.com/company/devcorptech/" aria-label="LinkedIn" target="_blank"><Linkedin size={16} /></Link>
+            <Link href="https://github.com/devcorptech" aria-label="Github" target="_blank"><Github size={16} /></Link>
+            <Link href="https://www.youtube.com/@devcorptech" aria-label="YouTube" target="_blank"><Youtube size={16} /></Link>
           </div>
         </div>
 
@@ -61,7 +59,7 @@ export default function Footer() {
       <div className="border-t border-davy-gray">
         <div className="max-w-5xl mx-auto px-6 py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-davy-gray">
-            <p>&copy; 2024 Devcorp. All rights reserved.</p>
+            <p>&copy; 2025 Devcorp. All rights reserved.</p>
             <p>Built with Next.js, TypeScript, and Tailwind CSS</p>
           </div>
         </div>

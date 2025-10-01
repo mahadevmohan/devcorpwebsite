@@ -30,11 +30,14 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold text-black mb-2">Mahadev Mohan</h3>
               <p className="text-davy-gray mb-4">CEO & Founder</p>
               <div className="space-y-4 text-davy-gray">
-                <p className="font-medium">Short professional bio (skills, focus)</p>
-                <p className="text-sm italic">Fun fact: &ldquo;Can debug with lo-fi beats on loop&rdquo;</p>
                 <p className="leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Hi, I’m <span className="font-semibold">Mahadev</span>, a Comp Sci grad from UW-Madison and founder 
+                of devcorp, where I turn ideas into projects with real impact. 
+                I’ve built everything from LLM-powered news apps for C-suites to quirky AI games, 
+                and I have experiences in project management, enterprise sales, GenAi, and more. 
+                I thrive on tackling tough problems, learning fast, and wearing as many hats as it takes to get things done.
                 </p>
+                <p className="text-sm italic">Fun fact: I procrastinate by cooking intricate meals for my friends.</p>
                 <div className="pt-4">
                   <a
                     href="/Resume/OfficialResume2025.pdf"
@@ -84,14 +87,14 @@ export default function AboutPage() {
               <p className="text-davy-gray mb-4">Founding Software Developer</p>
               <div className="space-y-4 text-davy-gray">
                 <p className="leading-relaxed">
-                  Hi, I’m <span className="font-semibold">Paramraj</span> — a Computer Science new grad from UMD with a passion
+                  Hi, I’m <span className="font-semibold">Paramraj</span>, a Computer Science new grad from UMD with a passion
                   for building scalable, user-friendly systems. I love turning ideas into projects that blend clean code, smart
                   design, and a bit of creativity. I’ve worked across full-stack development, data engineering, and AI/ML, and
                   I’m always looking for new ways to learn and push boundaries.
                 </p>
 
                 <p className="text-sm italic">
-                  Fun fact: I’ve listened to <em>Circles</em> by Post Malone over 1,800 times on Spotify since 2021 — and I’m
+                  Fun fact: I’ve listened to <em>Circles</em> by Post Malone over 1,800 times on Spotify since 2021, and I’m
                   still not tired of it.
                 </p>
                 <div className="pt-4">
