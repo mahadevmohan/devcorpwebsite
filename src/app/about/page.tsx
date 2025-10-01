@@ -55,7 +55,7 @@ export default function AboutPage() {
 
               <div className="aspect-square bg-alabaster rounded-lg overflow-hidden">
                 <Image
-                  src="/Images/mahadev.jpg"
+                  src="/Images/mahadev.JPG"
                   alt="Mahadev Mohan"
                   width={400}
                   height={400}
