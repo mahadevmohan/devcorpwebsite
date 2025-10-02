@@ -21,7 +21,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4">
             <Link
-              href="https://github.com/devcorptech"
+              href="https://github.com/mahadevmohan/devcorpwebsite"
               aria-label="GitHub"
               target="_blank"
               className="text-davy-gray hover:text-black transition-colors duration-200"

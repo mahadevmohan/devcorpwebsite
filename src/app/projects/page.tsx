@@ -31,6 +31,7 @@ export default async function ProjectsPage() {
                 status={p.status}
                 progress={p.progress}
                 demoUrl={p.demoUrl}
+                repoUrl={p.repoUrl}
                 thumbnail={p.thumbnail}
                 techStack={p.techStack}
               />
