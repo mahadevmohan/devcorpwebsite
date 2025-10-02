@@ -6,7 +6,7 @@ export type ProjectCardProps = {
   title: string;
   slug: string;
   summary: string;
-  status: "planned"|"building"|"shipped";
+  status: "planned" | "building" | "shipped";
   progress: number;
   demoUrl?: string;
 };
@@ -25,10 +25,10 @@ export default function ProjectCard(props: ProjectCardProps) {
         <ProgressBar value={props.progress} />
       </div>
       <div className="mt-4 flex gap-2">
-        {props.demoUrl && (
-          <a className="px-3 py-1 rounded bg-black text-seasalt text-sm" href={props.demoUrl} target="_blank" rel="noreferrer">Demo</a>
-        )}
-        <Link className="px-3 py-1 rounded border text-sm" href={`/projects/${props.slug}`}>Blog</Link>
+        {props.demoUrl && props.status === "shipped" ? (
+          <a className="px-3 py-1 rounded bg-black text-seasalt text-sm hover:bg-black/90 transition-colors" href={props.demoUrl} target="_blank" rel="noreferrer">Demo</a>
+        ) : null}
+        <Link className="px-3 py-1 rounded bg-black text-seasalt text-sm hover:bg-black/90 transition-colors" href={`/projects/${props.slug}`}>Read More</Link>
       </div>
     </div>
   );

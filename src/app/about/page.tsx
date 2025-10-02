@@ -31,11 +31,11 @@ export default function AboutPage() {
               <p className="text-davy-gray mb-4">CEO & Founder</p>
               <div className="space-y-4 text-davy-gray">
                 <p className="leading-relaxed">
-                Hi, I’m <span className="font-semibold">Mahadev</span>, a Comp Sci grad from UW-Madison and founder 
-                of devcorp, where I turn ideas into projects with real impact. 
-                I’ve built everything from LLM-powered news apps for C-suites to quirky AI games, 
-                and I have experiences in project management, enterprise sales, GenAi, and more. 
-                I thrive on tackling tough problems, learning fast, and wearing as many hats as it takes to get things done.
+                  Hi, I’m <span className="font-semibold">Mahadev</span>, a Comp Sci grad from UW-Madison and founder
+                  of devcorp, where I turn ideas into projects with real impact.
+                  I’ve built everything from LLM-powered news apps for C-suites to quirky AI games,
+                  and I have experiences in project management, enterprise sales, GenAI, and more.
+                  I thrive on tackling tough problems, learning fast, and wearing as many hats as it takes to get things done.
                 </p>
                 <p className="text-sm italic">Fun fact: I procrastinate by cooking intricate meals for my friends.</p>
                 <div className="pt-4">

@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Github, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Github, Youtube, Linkedin } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -78,7 +77,7 @@ export default function ContactPage() {
                   <a href="https://www.linkedin.com/company/devcorptech/" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="w-5 h-5 text-davy-gray" />
                   </a>
-                  
+
                   <a href="#" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
                     <Github className="w-5 h-5 text-davy-gray" />
                   </a>

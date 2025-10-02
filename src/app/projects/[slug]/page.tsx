@@ -1,34 +1,28 @@
-import { getAllProjects, getProjectBySlug, getAllPosts } from "@/lib/content";
-import Link from "next/link";
+import { getAllProjects } from "@/lib/content";
+import { redirect } from "next/navigation";
 
 export async function generateStaticParams() {
   const projects = await getAllProjects();
   return projects.map(p => ({ slug: p.slug }));
 }
 
-export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
-  const { meta, mdx } = await getProjectBySlug(params.slug);
-  const posts = (await getAllPosts()).filter(p => p.projectSlug === params.slug);
-  return (
-    <main className="max-w-3xl mx-auto p-8 space-y-6">
-      <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-bold">{meta.title}</h1>
-        <Link href="/projects" className="text-sm underline">Back</Link>
-      </div>
-      <div className="text-davy-gray">{meta.summary}</div>
-      <div className="prose dark:prose-invert max-w-none">
-        {mdx.content}
-      </div>
-      {posts.length > 0 && (
-        <section className="space-y-2">
-          <h2 className="text-xl font-semibold">Related Posts</h2>
-          <ul className="list-disc pl-5">
-            {posts.map(p => (
-              <li key={p.slug}><Link href={`/blog/${p.slug}`}>{p.title}</Link></li>
-            ))}
-          </ul>
-        </section>
-      )}
-    </main>
-  );
+export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+
+  // Redirect to specific TypeScript pages for better control
+  const projectPages: Record<string, string> = {
+    "devcorp-website": "/projects/devcorp-website",
+    "what-if-market": "/projects/what-if-market",
+    "ai-news-outlet": "/projects/ai-news-outlet",
+    "ai-story-game": "/projects/ai-story-game",
+    "discord-ai-notetaker": "/projects/discord-ai-notetaker",
+    "electronic-document-management": "/projects/electronic-document-management"
+  };
+
+  if (projectPages[slug]) {
+    redirect(projectPages[slug]);
+  }
+
+  // Fallback for projects without custom pages
+  redirect("/projects");
 }
