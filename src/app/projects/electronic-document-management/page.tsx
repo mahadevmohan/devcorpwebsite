@@ -5,13 +5,16 @@ import Callout from "@/components/mdx/Callout";
 export default async function EDMSProjectPage() {
     const { meta } = await getProjectBlog("electronic-document-management");
 
+    // Estimated read time: ~2700 words / 225 wpm = 12 minutes
+    const readTime = 12;
+
     return (
         <BlogLayout
             title={meta.title}
             excerpt={meta.excerpt}
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
             publishedAt={meta.publishedAt}
-            readTime={meta.readTime}
+            readTime={readTime}
         >
             <div className="space-y-12">
                 {/* Introduction */}

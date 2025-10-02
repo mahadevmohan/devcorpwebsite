@@ -2,10 +2,13 @@ import { getProjectBlog } from "@/lib/content";
 import BlogLayout from "@/components/BlogLayout";
 import TechStack from "@/components/mdx/TechStack";
 import Callout from "@/components/mdx/Callout";
-import ProgressBar from "@/components/mdx/ProgressBar";
+import ProgressBar from "@/components/ProgressBar";
 
 export default async function WhatIfMarketPage() {
     const { meta } = await getProjectBlog("what-if-market");
+
+    // Estimated read time: ~1800 words / 225 wpm = 8 minutes
+    const readTime = 8;
 
     return (
         <BlogLayout
@@ -13,17 +16,28 @@ export default async function WhatIfMarketPage() {
             excerpt={meta.excerpt || undefined}
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
             publishedAt={meta.publishedAt}
-            readTime={meta.readTime}
+            readTime={readTime}
         >
             <div className="space-y-12">
                 {/* Introduction */}
                 <section id="overview" className="space-y-6">
+                    <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                        <p className="text-blue-800 font-semibold mb-2">🚧 Project Status: Building</p>
+                        <p className="text-blue-700 mb-4">
+                            We&apos;re currently in active development of this project. The foundation is being built and core features are taking shape.
+                        </p>
+                        <div className="mt-4">
+                            <div className="mb-2 text-sm font-medium text-blue-700">Overall Progress: 45%</div>
+                            <ProgressBar value={45} />
+                        </div>
+                    </div>
+
                     <blockquote className="border-l-4 border-black pl-6 italic text-lg text-gray-700">
                         &ldquo;The stock market is a device for transferring money from the impatient to the patient.&rdquo; - Warren Buffett
                     </blockquote>
 
                     <p className="text-lg leading-relaxed text-gray-700">
-                        We&apos;re currently in <strong>active development</strong> of <strong>What-If Market</strong>, an innovative platform that gamifies financial education through interactive stock market simulations and hypothetical scenario testing.
+                        <strong>What-If Market</strong> is an innovative platform that gamifies financial education through interactive stock market simulations and hypothetical scenario testing. We&apos;re building a safe, engaging environment where users can learn about markets without risking real money.
                     </p>
                 </section>
 
@@ -67,7 +81,10 @@ export default async function WhatIfMarketPage() {
                 <section id="status" className="space-y-6">
                     <h2 className="text-3xl font-bold text-black">📊 Current Development Status</h2>
 
-                    <ProgressBar percentage={45} label="What-If Market Development Progress" color="blue" />
+                    <div className="mb-6">
+                        <div className="mb-2 text-sm font-medium text-gray-700">What-If Market Development Progress: 45%</div>
+                        <ProgressBar value={45} />
+                    </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">

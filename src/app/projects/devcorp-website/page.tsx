@@ -6,13 +6,16 @@ import Callout from "@/components/mdx/Callout";
 export default async function DevcorpWebsitePage() {
     const { meta } = await getProjectBlog("devcorp-website");
 
+    // Estimated read time: ~3400 words / 225 wpm = 15 minutes
+    const readTime = 15;
+
     return (
         <BlogLayout
             title={meta.title}
             excerpt={meta.excerpt || undefined}
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
             publishedAt={meta.publishedAt}
-            readTime={meta.readTime}
+            readTime={readTime}
         >
             <div className="space-y-12">
                 {/* Introduction */}

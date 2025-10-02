@@ -12,11 +12,11 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   // Redirect to specific TypeScript pages for better control
   const projectPages: Record<string, string> = {
     "devcorp-website": "/projects/devcorp-website",
+    "electronic-document-management": "/projects/electronic-document-management",
     "what-if-market": "/projects/what-if-market",
     "ai-news-outlet": "/projects/ai-news-outlet",
     "ai-story-game": "/projects/ai-story-game",
-    "discord-ai-notetaker": "/projects/discord-ai-notetaker",
-    "electronic-document-management": "/projects/electronic-document-management"
+    "discord-ai-notetaker": "/projects/discord-ai-notetaker"
   };
 
   if (projectPages[slug]) {
