@@ -3,21 +3,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import StatusPill from "@/components/StatusPill";
 
 type Project = {
   slug: string;
   title: string;
   summary: string;
   status: "planned" | "building" | "shipped";
-  progress: number;
-  tags: string[];
-  techStack: string[];
-  demoUrl?: string;
-  repoUrl?: string;
-  thumbnail?: string;
-  publishedAt?: string;
-  updatedAt?: string;
-  body: string;
 };
 
 interface HomeClientProps {
@@ -110,11 +102,14 @@ export default function HomeClient({ projects }: HomeClientProps) {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02 }}
               >
-                <h3 className="font-semibold text-seasalt mb-2">
-                  <Link href={`/projects/${p.slug}`} className="hover:underline">
-                    {p.title}
-                  </Link>
-                </h3>
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-semibold text-seasalt">
+                    <Link href={`/projects/${p.slug}`} className="hover:underline">
+                      {p.title}
+                    </Link>
+                  </h3>
+                  <StatusPill status={p.status} />
+                </div>
                 <p className="text-sm text-silver">{p.summary}</p>
               </motion.div>
             ))}

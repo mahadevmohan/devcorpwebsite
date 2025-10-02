@@ -1,5 +1,6 @@
 import { getAllPosts, getAllProjects } from "@/lib/content";
 import Link from "next/link";
+import StatusPill from "@/components/StatusPill";
 
 export const dynamic = "force-static";
 
@@ -33,27 +34,26 @@ export default async function BlogIndexPage() {
                   {/* Header */}
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex-1">
-                      <h2 className="text-2xl font-bold text-black mb-2">
-                        <Link href={`/blog/${post.slug}`} className="hover:text-davy-gray transition-colors">
-                          {post.title}
-                        </Link>
-                      </h2>
-                      <time className="text-sm text-silver">
-                        {new Date(post.publishedAt).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric'
-                        })}
-                      </time>
+                      <div className="flex items-center gap-3 mb-2">
+                        <h2 className="text-2xl font-bold text-black">
+                          <Link href={`/projects/${post.projectSlug}`} className="hover:text-davy-gray transition-colors">
+                            {post.title}
+                          </Link>
+                        </h2>
+                        {project && <StatusPill status={project.status} />}
+                      </div>
+                      <div className="flex items-center gap-4 text-sm text-silver">
+                        <time>
+                          {new Date(post.publishedAt).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                          })}
+                        </time>
+                        <span>•</span>
+                        <span>{post.readTime} min read</span>
+                      </div>
                     </div>
-                    {project && (
-                      <Link
-                        href={`/projects/${project.slug}`}
-                        className="text-sm text-davy-gray hover:text-black transition-colors"
-                      >
-                        View Project →
-                      </Link>
-                    )}
                   </div>
 
                   {/* Tech Stack */}
@@ -80,34 +80,60 @@ export default async function BlogIndexPage() {
                     </div>
                   )}
 
-                  {/* Content Preview */}
-                  <div className="space-y-4 text-davy-gray">
-                    <div>
-                      <h4 className="font-semibold text-black mb-2">Intro Paragraph:</h4>
-                      <p className="text-sm italic">
-                        Why you built it, what problem it solves, or what inspired it.
-                      </p>
+                  {/* Highlights */}
+                  {post.highlights && post.highlights.length > 0 && (
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-black mb-3">Key Highlights</h4>
+                      <ul className="space-y-2">
+                        {post.highlights.slice(0, 3).map((highlight, index) => (
+                          <li key={index} className="flex items-start gap-2 text-sm text-davy-gray">
+                            <span className="text-green-600 mt-1">✓</span>
+                            <span>{highlight}</span>
+                          </li>
+                        ))}
+                        {post.highlights.length > 3 && (
+                          <li className="text-sm text-silver italic">
+                            +{post.highlights.length - 3} more highlights...
+                          </li>
+                        )}
+                      </ul>
                     </div>
+                  )}
 
-                    <div>
-                      <h4 className="font-semibold text-black mb-2">Challenges & Learnings:</h4>
-                      <p className="text-sm italic">
-                        A short bullet list or paragraph on what you struggled with and overcame.
-                      </p>
+                  {/* Lessons Learned */}
+                  {post.lessonsLearned && post.lessonsLearned.length > 0 && (
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-black mb-3">Lessons Learned</h4>
+                      <ul className="space-y-2">
+                        {post.lessonsLearned.slice(0, 2).map((lesson, index) => (
+                          <li key={index} className="flex items-start gap-2 text-sm text-davy-gray">
+                            <span className="text-blue-600 mt-1">💡</span>
+                            <span>{lesson}</span>
+                          </li>
+                        ))}
+                        {post.lessonsLearned.length > 2 && (
+                          <li className="text-sm text-silver italic">
+                            +{post.lessonsLearned.length - 2} more lessons...
+                          </li>
+                        )}
+                      </ul>
                     </div>
+                  )}
 
-                    <div>
-                      <h4 className="font-semibold text-black mb-2">Visuals:</h4>
-                      <p className="text-sm italic">
-                        A screenshot gallery, or an embedded video (demo walk-through).
+                  {/* Next Steps */}
+                  {post.nextSteps && (
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-black mb-2">Next Steps</h4>
+                      <p className="text-sm text-davy-gray italic">
+                        {post.nextSteps.length > 120 ? `${post.nextSteps.substring(0, 120)}...` : post.nextSteps}
                       </p>
                     </div>
-                  </div>
+                  )}
 
                   {/* Read More Link */}
                   <div className="mt-8 pt-6 border-t border-neutral-200">
                     <Link
-                      href={`/blog/${post.slug}`}
+                      href={`/projects/${post.projectSlug}`}
                       className="inline-flex items-center text-black hover:text-davy-gray font-medium transition-colors"
                     >
                       Read full blog post →

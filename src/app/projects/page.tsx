@@ -13,7 +13,7 @@ export default async function ProjectsPage() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold text-seasalt mb-4">Project Demos</h1>
           <p className="text-xl text-silver">
-            See our projects in action — from idea to deployment
+            See our projects in action, from idea to deployment
           </p>
         </div>
       </section>
