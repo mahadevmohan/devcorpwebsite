@@ -26,7 +26,7 @@ export function calculateReadTimeFromJSX(content: string): number {
     const wordsPerMinute = 225;
 
     // Remove JSX tags, className props, and other React artifacts
-    let cleanText = content
+    const cleanText = content
         .replace(/<\/?[^>]+(>|$)/g, ' ') // Remove JSX tags
         .replace(/className="[^"]*"/g, '') // Remove className
         .replace(/\{[^}]*\}/g, '') // Remove JSX expressions
