@@ -19,11 +19,11 @@ export default async function WhatIfMarketPage() {
                 {/* Introduction */}
                 <section id="overview" className="space-y-6">
                     <blockquote className="border-l-4 border-black pl-6 italic text-lg text-gray-700">
-                        "The stock market is a device for transferring money from the impatient to the patient." - Warren Buffett
+                        &ldquo;The stock market is a device for transferring money from the impatient to the patient.&rdquo; - Warren Buffett
                     </blockquote>
 
                     <p className="text-lg leading-relaxed text-gray-700">
-                        We're currently in <strong>active development</strong> of <strong>What-If Market</strong>, an innovative platform that gamifies financial education through interactive stock market simulations and hypothetical scenario testing.
+                        We&apos;re currently in <strong>active development</strong> of <strong>What-If Market</strong>, an innovative platform that gamifies financial education through interactive stock market simulations and hypothetical scenario testing.
                     </p>
                 </section>
 
@@ -32,7 +32,7 @@ export default async function WhatIfMarketPage() {
                     <h2 className="text-3xl font-bold text-black">🎯 Project Overview</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
-                        <strong>What-If Market</strong> addresses a critical gap in financial education by providing users with a <strong>safe, engaging environment</strong> to explore how different events and scenarios might impact financial markets. Instead of risking real money, users can experiment with various "what-if" situations and learn from the outcomes.
+                        <strong>What-If Market</strong> addresses a critical gap in financial education by providing users with a <strong>safe, engaging environment</strong> to explore how different events and scenarios might impact financial markets. Instead of risking real money, users can experiment with various &ldquo;what-if&rdquo; situations and learn from the outcomes.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -283,7 +283,7 @@ interface MarketSimulation {
                     <h2 className="text-3xl font-bold text-black">🎓 Educational Impact</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
-                        What-If Market isn't just a game—it's a <strong>comprehensive financial education tool</strong>:
+                        What-If Market isn&apos;t just a game—it&apos;s a <strong>comprehensive financial education tool</strong>:
                     </p>
 
                     <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg border border-blue-200">

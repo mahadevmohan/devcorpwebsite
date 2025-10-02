@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Linkedin, Instagram, X, Youtube, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Youtube, ExternalLink } from "lucide-react";
 
 const column = "space-y-2";
 const heading = "text-xs font-semibold text-black uppercase tracking-wide";

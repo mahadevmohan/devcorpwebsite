@@ -1,8 +1,6 @@
 import { getProjectBlog } from "@/lib/content";
 import BlogLayout from "@/components/BlogLayout";
-import TechStack from "@/components/mdx/TechStack";
 import Callout from "@/components/mdx/Callout";
-import ProgressBar from "@/components/mdx/ProgressBar";
 
 export default async function EDMSProjectPage() {
     const { meta } = await getProjectBlog("electronic-document-management");
@@ -19,7 +17,7 @@ export default async function EDMSProjectPage() {
                 {/* Introduction */}
                 <section id="overview" className="space-y-6">
                     <blockquote className="border-l-4 border-black pl-6 italic text-lg text-gray-700">
-                        "Document management is not just about storing files; it's about creating intelligent workflows that enhance productivity and ensure security."
+                        &ldquo;Document management is not just about storing files; it&apos;s about creating intelligent workflows that enhance productivity and ensure security.&rdquo;
                     </blockquote>
 
                     <p className="text-lg leading-relaxed text-gray-700">
@@ -409,7 +407,7 @@ export default async function EDMSProjectPage() {
                             </h3>
                             <p className="text-gray-600 mb-3">Files upload directly from browser to S3, bypassing server limitations</p>
                             <ul className="text-sm text-gray-500 space-y-1">
-                                <li>• Avoids Vercel's 4.5MB function limit</li>
+                                <li>• Avoids Vercel&apos;s 4.5MB function limit</li>
                                 <li>• Faster uploads with reduced server load</li>
                                 <li>• Better scalability for large files</li>
                                 <li>• Improved user experience with progress tracking</li>

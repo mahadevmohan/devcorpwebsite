@@ -18,7 +18,7 @@ export default async function DevcorpWebsitePage() {
                 {/* Introduction */}
                 <section id="overview" className="space-y-6">
                     <blockquote className="border-l-4 border-black pl-6 italic text-lg text-gray-700">
-                        "The best way to predict the future is to create it." - Alan Kay
+                        &ldquo;The best way to predict the future is to create it.&rdquo; - Alan Kay
                     </blockquote>
 
                     <p className="text-lg leading-relaxed text-gray-700">
@@ -26,7 +26,7 @@ export default async function DevcorpWebsitePage() {
                     </p>
 
                     <Callout type="success" title="Live and Production-Ready">
-                        Visit <strong><a href="https://devcorpwebsite.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">devcorpwebsite.vercel.app</a></strong> to explore the live site and experience all the features we'll discuss in this article.
+                        Visit <strong><a href="https://devcorpwebsite.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">devcorpwebsite.vercel.app</a></strong> to explore the live site and experience all the features we&apos;ll discuss in this article.
                     </Callout>
                 </section>
 
@@ -305,7 +305,7 @@ type Project = z.infer<typeof projectSchema>;`}</code>
                                 <span>🏗️</span> Challenge: Designing a Scalable Content Architecture
                             </h3>
                             <p className="text-gray-600 mb-3">
-                                How do you build a content management system that's powerful enough for complex projects but simple enough that adding a new project is just creating one file?
+                                How do you build a content management system that&apos;s powerful enough for complex projects but simple enough that adding a new project is just creating one file?
                             </p>
                             <div className="bg-gray-50 p-4 rounded-lg mb-3">
                                 <pre className="text-sm overflow-x-auto">
@@ -470,7 +470,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
                     <h2 className="text-3xl font-bold text-black">✨ Feature Showcase</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
-                        Let's explore the key features that make the Devcorp website stand out.
+                        Let&apos;s explore the key features that make the Devcorp website stand out.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -579,7 +579,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
                     <h2 className="text-3xl font-bold text-black">🔮 Future Enhancements</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
-                        The Devcorp website is a living project that continues to evolve. Here's what's planned for future releases.
+                        The Devcorp website is a living project that continues to evolve. Here&apos;s what&apos;s planned for future releases.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -623,7 +623,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
                     <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg border border-green-200">
                         <h3 className="text-2xl font-bold mb-4 text-green-800">🎯 Final Thoughts</h3>
                         <p className="text-green-700 mb-4 leading-relaxed">
-                            The Devcorp website is more than just a portfolio—it's a demonstration of what happens when you combine modern technologies with thoughtful engineering. From the centralized content management system to the intelligent navigation patterns, every feature was built with intention and care.
+                            The Devcorp website is more than just a portfolio—it&apos;s a demonstration of what happens when you combine modern technologies with thoughtful engineering. From the centralized content management system to the intelligent navigation patterns, every feature was built with intention and care.
                         </p>
                         <p className="text-green-700 mb-4 leading-relaxed">
                             This project showcases our ability to build production-ready applications that are not only functional but also maintainable, scalable, and delightful to use. It represents our commitment to code quality, user experience, and continuous improvement.

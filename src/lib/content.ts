@@ -80,10 +80,10 @@ export async function getProjectInfo(slug: string) {
 export async function getProjectBlog(slug: string) {
   const projectDir = path.join(PROJECTS_DIR, slug);
   try {
-    const { content, data } = await readMdxFile(projectDir, "blog");
+    const { data } = await readMdxFile(projectDir, "blog");
     const meta = projectBlogSchema.parse({ ...data, slug, projectSlug: slug });
     return { meta };
-  } catch (error) {
+  } catch {
     // If no blog.mdx exists, create default metadata
     const projectInfo = await getProjectInfo(slug);
     const meta = projectBlogSchema.parse({
