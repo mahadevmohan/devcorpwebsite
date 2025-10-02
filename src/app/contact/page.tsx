@@ -78,10 +78,10 @@ export default function ContactPage() {
                     <Linkedin className="w-5 h-5 text-davy-gray" />
                   </a>
 
-                  <a href="#" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/mahadevmohan/devcorpwebsite" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
                     <Github className="w-5 h-5 text-davy-gray" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.youtube.com/@devcorptech" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
                     <Youtube className="w-5 h-5 text-davy-gray" />
                   </a>
                 </div>
