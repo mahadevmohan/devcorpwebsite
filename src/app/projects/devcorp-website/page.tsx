@@ -35,7 +35,7 @@ export default async function DevcorpWebsitePage() {
 
                 {/* Project Genesis */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🎯 Project Genesis</h2>
+                    <h2 className="">Project Genesis</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Every great project starts with a problem to solve. For Devcorp, we needed a platform that could showcase our work while demonstrating technical excellence.
@@ -44,25 +44,25 @@ export default async function DevcorpWebsitePage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🎨</span> Showcase Our Work
+                                Showcase Our Work
                             </h3>
                             <p className="text-gray-600">Present projects in a professional manner that highlights technical depth and innovation</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>📝</span> Share Our Journey
+                                Share Our Journey
                             </h3>
                             <p className="text-gray-600">Document our development process, challenges, and learnings through detailed blog entries</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>⚡</span> Demonstrate Skills
+                                Demonstrate Skills
                             </h3>
                             <p className="text-gray-600">Use the website itself as a technical showcase of modern web development</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🚀</span> Easy Maintenance
+                                Easy Maintenance
                             </h3>
                             <p className="text-gray-600">Create a system where adding new projects automatically updates all pages</p>
                         </div>
@@ -71,7 +71,7 @@ export default async function DevcorpWebsitePage() {
 
                 {/* Architecture & Tech Stack */}
                 <section id="technology" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🏗️ Architecture & Tech Stack</h2>
+                    <h2 className="text-3xl font-bold text-black"> Architecture & Tech Stack</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         We chose cutting-edge technologies that balance performance, developer experience, and maintainability. Each decision was made with scalability and future growth in mind.
@@ -91,28 +91,27 @@ export default async function DevcorpWebsitePage() {
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="flex items-start gap-3">
-                                        <span className="text-blue-500">⚛️</span>
+                                        <span className="text-blue-500"></span>
                                         <div>
                                             <h5 className="font-semibold">React 19 Server Components</h5>
                                             <p className="text-sm text-gray-500">Default to server rendering for optimal performance</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <span className="text-blue-500">📄</span>
                                         <div>
                                             <h5 className="font-semibold">Static Site Generation</h5>
                                             <p className="text-sm text-gray-500">Pre-render pages at build time for instant loading</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <span className="text-blue-500">🛣️</span>
+                                        <span className="text-blue-500"></span>
                                         <div>
                                             <h5 className="font-semibold">App Router</h5>
                                             <p className="text-sm text-gray-500">File-based routing with enhanced developer experience</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
-                                        <span className="text-blue-500">🖼️</span>
+                                        <span className="text-blue-500"></span>
                                         <div>
                                             <h5 className="font-semibold">Image Optimization</h5>
                                             <p className="text-sm text-gray-500">Automatic WebP conversion and lazy loading</p>
@@ -205,7 +204,7 @@ type Project = z.infer<typeof projectSchema>;`}</code>
 
                 {/* Content Management Deep Dive */}
                 <section id="features" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">📁 Content Management System</h2>
+                    <h2 className="">Content Management System</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         The centerpiece of the Devcorp website is its <strong>centralized content management system</strong>. This system eliminates hardcoded data and makes the entire site update automatically when new projects are added.
@@ -296,7 +295,7 @@ type Project = z.infer<typeof projectSchema>;`}</code>
 
                 {/* Technical Challenges */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🚀 Major Technical Challenges</h2>
+                    <h2 className="">Major Technical Challenges</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Building a production-ready website from scratch presented some fascinating architectural and design challenges. Here are the big problems we tackled:
@@ -305,7 +304,7 @@ type Project = z.infer<typeof projectSchema>;`}</code>
                     <div className="space-y-6">
                         <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                                <span>🏗️</span> Challenge: Designing a Scalable Content Architecture
+                                Challenge: Designing a Scalable Content Architecture
                             </h3>
                             <p className="text-gray-600 mb-3">
                                 How do you build a content management system that&apos;s powerful enough for complex projects but simple enough that adding a new project is just creating one file?
@@ -334,13 +333,13 @@ export const projectSchema = z.object({
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                ✅ Solution: Built a Zod-powered schema system that validates content at build time while generating TypeScript types automatically
+                                 Solution: Built a Zod-powered schema system that validates content at build time while generating TypeScript types automatically
                             </p>
                         </div>
 
                         <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                                <span>🎨</span> Challenge: Creating a Custom Design System from Scratch
+                                Challenge: Creating a Custom Design System from Scratch
                             </h3>
                             <p className="text-gray-600 mb-3">
                                 We needed a design system that felt unique and professional while being maintainable. The challenge was balancing creativity with consistency across 5+ different page layouts.
@@ -365,13 +364,13 @@ export const projectSchema = z.object({
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                ✅ Solution: Created a five-color palette with CSS variables, ensuring every page feels cohesive while maintaining visual hierarchy
+                                 Solution: Created a five-color palette with CSS variables, ensuring every page feels cohesive while maintaining visual hierarchy
                             </p>
                         </div>
 
                         <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                                <span>⚡</span> Challenge: Optimizing for Performance Without Compromising Features
+                                Challenge: Optimizing for Performance Without Compromising Features
                             </h3>
                             <p className="text-gray-600 mb-3">
                                 We wanted rich animations, large images, and interactive features while maintaining lightning-fast load times. The challenge was finding the right balance.
@@ -395,13 +394,13 @@ export const projectSchema = z.object({
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                ✅ Solution: Server-first architecture with selective client-side enhancements, achieving 95+ Lighthouse scores
+                                 Solution: Server-first architecture with selective client-side enhancements, achieving 95+ Lighthouse scores
                             </p>
                         </div>
 
                         <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                                <span>🧠</span> Challenge: Building Intelligent User Experience Patterns
+                                Challenge: Building Intelligent User Experience Patterns
                             </h3>
                             <p className="text-gray-600 mb-3">
                                 How do you create navigation that feels intuitive and smart? Users expect the back button to work like a browser, but single-page apps with anchor links break this expectation.
@@ -432,13 +431,13 @@ const SmartBackButton = () => {
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                ✅ Solution: Built a SmartBackButton that tracks actual navigation patterns and table of contents that scrolls without polluting browser history
+                                 Solution: Built a SmartBackButton that tracks actual navigation patterns and table of contents that scrolls without polluting browser history
                             </p>
                         </div>
 
                         <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                                <span>🔄</span> Challenge: Future-Proofing the Architecture
+                                Challenge: Future-Proofing the Architecture
                             </h3>
                             <p className="text-gray-600 mb-3">
                                 How do you build a website that can grow from 5 projects to 50 projects, from 2 authors to 10 authors, without major refactoring?
@@ -462,7 +461,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                ✅ Solution: Built extensible schemas with optional fields, dynamic sorting algorithms, and type-safe architecture that grows with requirements
+                                 Solution: Built extensible schemas with optional fields, dynamic sorting algorithms, and type-safe architecture that grows with requirements
                             </p>
                         </div>
                     </div>
@@ -470,7 +469,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
 
                 {/* Features Showcase */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">✨ Feature Showcase</h2>
+                    <h2 className="">Feature Showcase</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Let&apos;s explore the key features that make the Devcorp website stand out.
@@ -479,7 +478,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🎯</span> Status Badge System
+                                Status Badge System
                             </h3>
                             <p className="text-gray-600 mb-3">Color-coded badges appear across all project displays</p>
                             <div className="flex gap-2 mb-3">
@@ -490,31 +489,31 @@ blogExcerpt: z.string().optional(), // Just add to schema
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>📱</span> Responsive Design
+                                Responsive Design
                             </h3>
                             <p className="text-gray-600">Mobile-first approach ensures perfect display on all devices from phones to desktops</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🎬</span> Smooth Animations
+                                Smooth Animations
                             </h3>
                             <p className="text-gray-600">Framer Motion powers entrance animations, hover effects, and page transitions</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>📚</span> Table of Contents
+                                Table of Contents
                             </h3>
                             <p className="text-gray-600">Sticky sidebar navigation with smooth scrolling for long-form content</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🔍</span> SEO Optimization
+                                SEO Optimization
                             </h3>
                             <p className="text-gray-600">Proper meta tags, structured data, and server-side rendering for search engines</p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>♿</span> Accessibility
+                                Accessibility
                             </h3>
                             <p className="text-gray-600">Semantic HTML, ARIA labels, keyboard navigation, and screen reader support</p>
                         </div>
@@ -523,7 +522,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
 
                 {/* Project Summary */}
                 <section id="status" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🎓 Lessons Learned & Takeaways</h2>
+                    <h2 className="">Lessons Learned & Takeaways</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Building the Devcorp website taught us invaluable lessons about modern web development, content architecture, and user experience design.
@@ -532,7 +531,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
                     <div className="space-y-6">
                         <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
                             <h3 className="font-semibold text-blue-800 mb-3 flex items-center gap-2">
-                                <span>💡</span> Content Management is Key
+                                Content Management is Key
                             </h3>
                             <p className="text-blue-700">
                                 Centralized content management eliminates hardcoded data and makes updates seamless across all pages. The investment in building a robust content system pays dividends in maintenance and scalability.
@@ -541,7 +540,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
 
                         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
                             <h3 className="font-semibold text-green-800 mb-3 flex items-center gap-2">
-                                <span>💡</span> Design Systems Provide Consistency
+                                Design Systems Provide Consistency
                             </h3>
                             <p className="text-green-700">
                                 Custom design systems with CSS variables provide consistency and easier maintenance. Our five-color palette ensures brand coherence without limiting creative expression.
@@ -550,7 +549,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
 
                         <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
                             <h3 className="font-semibold text-purple-800 mb-3 flex items-center gap-2">
-                                <span>💡</span> Type Safety Catches Bugs Early
+                                Type Safety Catches Bugs Early
                             </h3>
                             <p className="text-purple-700">
                                 Zod schemas at the content layer catch errors at build time, not runtime. TypeScript integration provides excellent IDE support and refactoring safety.
@@ -559,7 +558,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
 
                         <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
                             <h3 className="font-semibold text-orange-800 mb-3 flex items-center gap-2">
-                                <span>💡</span> User Experience is in the Details
+                                User Experience is in the Details
                             </h3>
                             <p className="text-orange-700">
                                 Small details matter: intelligent back buttons, smooth scrolling, hover effects, and thoughtful navigation create a polished experience that users notice and appreciate.
@@ -568,7 +567,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
 
                         <div className="bg-pink-50 p-6 rounded-lg border-l-4 border-pink-500">
                             <h3 className="font-semibold text-pink-800 mb-3 flex items-center gap-2">
-                                <span>💡</span> Server Components as Default
+                                Server Components as Default
                             </h3>
                             <p className="text-pink-700">
                                 Server components should be the default—use client components only when you need interactivity. This approach reduces JavaScript bundle size and improves performance significantly.
@@ -579,7 +578,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
 
                 {/* Future Enhancements */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🔮 Future Enhancements</h2>
+                    <h2 className="text-3xl font-bold text-black">Future Enhancements</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         The Devcorp website is a living project that continues to evolve. Here&apos;s what&apos;s planned for future releases.
@@ -624,7 +623,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
                 {/* Final Thoughts */}
                 <section className="space-y-6">
                     <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg border border-green-200">
-                        <h3 className="text-2xl font-bold mb-4 text-green-800">🎯 Final Thoughts</h3>
+                        <h3 className="">Final Thoughts</h3>
                         <p className="text-green-700 mb-4 leading-relaxed">
                             The Devcorp website is more than just a portfolio—it&apos;s a demonstration of what happens when you combine modern technologies with thoughtful engineering. From the centralized content management system to the intelligent navigation patterns, every feature was built with intention and care.
                         </p>

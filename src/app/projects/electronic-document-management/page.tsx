@@ -31,7 +31,7 @@ export default async function EDMSProjectPage() {
 
                 {/* Architecture & Tech Stack */}
                 <section id="technology" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🏗️ Architecture & Tech Stack</h2>
+                    <h2 className="text-3xl font-bold text-black">Architecture & Tech Stack</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         The EDMS is built using a modern, scalable architecture that separates concerns and leverages cloud services for optimal performance and reliability.
@@ -42,8 +42,8 @@ export default async function EDMSProjectPage() {
                             <h3 className="text-2xl font-semibold text-black mb-4">Backend Technologies</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>⚡</span> Node.js + Express.js
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Node.js + Express.js
                                     </h4>
                                     <p className="text-gray-600 mb-3">JavaScript runtime for server-side development with Express minimal web framework</p>
                                     <ul className="text-sm text-gray-500 space-y-1">
@@ -53,8 +53,8 @@ export default async function EDMSProjectPage() {
                                     </ul>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🗄️</span> MongoDB + Atlas
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        MongoDB + Atlas
                                     </h4>
                                     <p className="text-gray-600 mb-3">NoSQL database for flexible document storage and user management</p>
                                     <ul className="text-sm text-gray-500 space-y-1">
@@ -64,8 +64,8 @@ export default async function EDMSProjectPage() {
                                     </ul>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>☁️</span> AWS S3 Integration
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        AWS S3 Integration
                                     </h4>
                                     <p className="text-gray-600 mb-3">Scalable cloud storage with direct browser-to-S3 uploads</p>
                                     <ul className="text-sm text-gray-500 space-y-1">
@@ -75,8 +75,8 @@ export default async function EDMSProjectPage() {
                                     </ul>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🔐</span> JWT Authentication
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        JWT Authentication
                                     </h4>
                                     <p className="text-gray-600 mb-3">Stateless authentication with secure user sessions</p>
                                     <ul className="text-sm text-gray-500 space-y-1">
@@ -92,8 +92,8 @@ export default async function EDMSProjectPage() {
                             <h3 className="text-2xl font-semibold text-black mb-4">Frontend Technologies</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🎨</span> EJS Templating
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        EJS Templating
                                     </h4>
                                     <p className="text-gray-600 mb-3">Server-side rendering with dynamic content generation</p>
                                     <ul className="text-sm text-gray-500 space-y-1">
@@ -103,8 +103,8 @@ export default async function EDMSProjectPage() {
                                     </ul>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>⚡</span> Vanilla JavaScript (ES6+)
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Vanilla JavaScript (ES6+)
                                     </h4>
                                     <p className="text-gray-600 mb-3">No framework dependencies with full control over functionality</p>
                                     <ul className="text-sm text-gray-500 space-y-1">
@@ -114,8 +114,8 @@ export default async function EDMSProjectPage() {
                                     </ul>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🎨</span> CSS3 + Flexbox/Grid
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        CSS3 + Flexbox/Grid
                                     </h4>
                                     <p className="text-gray-600 mb-3">Modern layout system with responsive design</p>
                                     <ul className="text-sm text-gray-500 space-y-1">
@@ -125,8 +125,8 @@ export default async function EDMSProjectPage() {
                                     </ul>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>📱</span> Progressive Enhancement
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Progressive Enhancement
                                     </h4>
                                     <p className="text-gray-600 mb-3">Works without JavaScript as fallback</p>
                                     <ul className="text-sm text-gray-500 space-y-1">
@@ -142,7 +142,7 @@ export default async function EDMSProjectPage() {
 
                 {/* Security Implementation */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🔒 Security Implementation</h2>
+                    <h2 className="text-3xl font-bold text-black">Security Implementation</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Security is paramount in document management systems. The EDMS implements multiple layers of security to protect sensitive data and ensure proper access control.
@@ -150,8 +150,8 @@ export default async function EDMSProjectPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🔐</span> Authentication System
+                            <h3 className="font-semibold text-lg mb-3">
+                                Authentication System
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• JWT-based authentication with 24h expiration</li>
@@ -161,8 +161,8 @@ export default async function EDMSProjectPage() {
                             </ul>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>👥</span> Role-Based Access Control
+                            <h3 className="font-semibold text-lg mb-3">
+                                Role-Based Access Control
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li><strong>Admin:</strong> Full system access, user management</li>
@@ -171,8 +171,8 @@ export default async function EDMSProjectPage() {
                             </ul>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🛡️</span> Protected System Accounts
+                            <h3 className="font-semibold text-lg mb-3">
+                                Protected System Accounts
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• Indestructible admin accounts</li>
@@ -181,8 +181,8 @@ export default async function EDMSProjectPage() {
                             </ul>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>📁</span> File Security
+                            <h3 className="font-semibold text-lg mb-3">
+                                File Security
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• Filename sanitization</li>
@@ -196,7 +196,7 @@ export default async function EDMSProjectPage() {
 
                 {/* File Management System */}
                 <section id="features" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">📁 File Management System</h2>
+                    <h2 className="text-3xl font-bold text-black">File Management System</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         The file management system is designed for efficiency, security, and scalability. Files are stored in AWS S3 with metadata in MongoDB for optimal performance.
@@ -235,26 +235,26 @@ export default async function EDMSProjectPage() {
                             <h3 className="text-2xl font-semibold text-black mb-4">File Operations</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>⬇️</span> Download
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Download
                                     </h4>
                                     <p className="text-gray-600">Secure downloads using S3 signed URLs with expiration</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>👁️</span> Preview
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Preview
                                     </h4>
                                     <p className="text-gray-600">In-browser preview for images and PDFs with modal interface</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🗑️</span> Delete
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Delete
                                     </h4>
                                     <p className="text-gray-600">Secure deletion from both S3 storage and database</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🔍</span> Search/Filter
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Search/Filter
                                     </h4>
                                     <p className="text-gray-600">Filter by category, uploader, size with instant results</p>
                                 </div>
@@ -270,7 +270,7 @@ export default async function EDMSProjectPage() {
 
                 {/* DevOps & Deployment */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🚀 DevOps & Deployment</h2>
+                    <h2 className="text-3xl font-bold text-black">DevOps & Deployment</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         The deployment strategy leverages modern DevOps practices with automated testing, continuous integration, and serverless architecture for optimal performance and scalability.
@@ -278,8 +278,8 @@ export default async function EDMSProjectPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>⚡</span> Vercel Serverless Functions
+                            <h3 className="font-semibold text-lg mb-3">
+                                Vercel Serverless Functions
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• Auto-scaling, pay-per-request model</li>
@@ -289,8 +289,8 @@ export default async function EDMSProjectPage() {
                             </ul>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🔄</span> GitHub Actions CI/CD
+                            <h3 className="font-semibold text-lg mb-3">
+                                GitHub Actions CI/CD
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• Automated testing on multiple Node.js versions</li>
@@ -300,8 +300,8 @@ export default async function EDMSProjectPage() {
                             </ul>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🧪</span> Jest Testing Framework
+                            <h3 className="font-semibold text-lg mb-3">
+                                Jest Testing Framework
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• Unit tests for server logic</li>
@@ -311,8 +311,8 @@ export default async function EDMSProjectPage() {
                             </ul>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>📊</span> Monitoring & Logging
+                            <h3 className="font-semibold text-lg mb-3">
+                                Monitoring & Logging
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• Request/response logging</li>
@@ -326,7 +326,7 @@ export default async function EDMSProjectPage() {
 
                 {/* Performance Optimizations */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">⚡ Performance Optimizations</h2>
+                    <h2 className="text-3xl font-bold text-black">Performance Optimizations</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Performance is critical for document management systems handling large files and multiple users. The EDMS implements various optimization strategies across the entire stack.
@@ -337,26 +337,26 @@ export default async function EDMSProjectPage() {
                             <h3 className="text-2xl font-semibold text-black mb-4">Client-Side Performance</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🚀</span> Lazy Loading
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Lazy Loading
                                     </h4>
                                     <p className="text-gray-600">Files and images load on-demand to improve initial page speed</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>⚡</span> Event Delegation
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Event Delegation
                                     </h4>
                                     <p className="text-gray-600">Efficient event handling for large file grids</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🔍</span> Debounced Search
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Debounced Search
                                     </h4>
                                     <p className="text-gray-600">Reduces API calls during typing for better UX</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>💾</span> Browser Caching
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Browser Caching
                                     </h4>
                                     <p className="text-gray-600">Intelligent caching strategies for static assets</p>
                                 </div>
@@ -367,26 +367,26 @@ export default async function EDMSProjectPage() {
                             <h3 className="text-2xl font-semibold text-black mb-4">Server-Side Performance</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🔗</span> Connection Pooling
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Connection Pooling
                                     </h4>
                                     <p className="text-gray-600">MongoDB connection pooling for efficient database access</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>⚡</span> Asynchronous Operations
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Asynchronous Operations
                                     </h4>
                                     <p className="text-gray-600">Non-blocking I/O operations for better throughput</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>🛡️</span> Graceful Error Handling
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Graceful Error Handling
                                     </h4>
                                     <p className="text-gray-600">Proper error handling prevents crashes and improves reliability</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h4 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                        <span>💾</span> Memory Management
+                                    <h4 className="font-semibold text-lg mb-3">
+                                        Memory Management
                                     </h4>
                                     <p className="text-gray-600">Efficient memory usage and garbage collection</p>
                                 </div>
@@ -397,7 +397,7 @@ export default async function EDMSProjectPage() {
 
                 {/* Key Technical Decisions */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🎯 Key Technical Decisions</h2>
+                    <h2 className="text-3xl font-bold text-black">Key Technical Decisions</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Several strategic decisions were made during development to ensure optimal performance, scalability, and maintainability.
@@ -405,8 +405,8 @@ export default async function EDMSProjectPage() {
 
                     <div className="space-y-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>☁️</span> Direct S3 Uploads
+                            <h3 className="font-semibold text-lg mb-3">
+                                Direct S3 Uploads
                             </h3>
                             <p className="text-gray-600 mb-3">Files upload directly from browser to S3, bypassing server limitations</p>
                             <ul className="text-sm text-gray-500 space-y-1">
@@ -418,8 +418,8 @@ export default async function EDMSProjectPage() {
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🔍</span> Client-Side Filtering
+                            <h3 className="font-semibold text-lg mb-3">
+                                Client-Side Filtering
                             </h3>
                             <p className="text-gray-600 mb-3">Filtering and sorting happens in the browser for instant results</p>
                             <ul className="text-sm text-gray-500 space-y-1">
@@ -431,8 +431,8 @@ export default async function EDMSProjectPage() {
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🎨</span> EJS over React
+                            <h3 className="font-semibold text-lg mb-3">
+                                EJS over React
                             </h3>
                             <p className="text-gray-600 mb-3">Server-side rendering chosen over client-side framework</p>
                             <ul className="text-sm text-gray-500 space-y-1">
@@ -444,8 +444,8 @@ export default async function EDMSProjectPage() {
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🗄️</span> MongoDB over SQL
+                            <h3 className="font-semibold text-lg mb-3">
+                                MongoDB over SQL
                             </h3>
                             <p className="text-gray-600 mb-3">NoSQL database chosen for flexible document storage</p>
                             <ul className="text-sm text-gray-500 space-y-1">
@@ -460,7 +460,7 @@ export default async function EDMSProjectPage() {
 
                 {/* API Documentation */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">📚 API Documentation</h2>
+                    <h2 className="text-3xl font-bold text-black">API Documentation</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         The EDMS includes comprehensive API documentation with OpenAPI/Swagger integration for easy integration and testing.
@@ -468,8 +468,8 @@ export default async function EDMSProjectPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>📖</span> Interactive Documentation
+                            <h3 className="font-semibold text-lg mb-3">
+                                Interactive Documentation
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• OpenAPI/Swagger integration</li>
@@ -479,8 +479,8 @@ export default async function EDMSProjectPage() {
                             </ul>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🔗</span> Key Endpoints
+                            <h3 className="font-semibold text-lg mb-3">
+                                Key Endpoints
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li><code>POST /registerSubmit</code> - User registration</li>
@@ -495,7 +495,7 @@ export default async function EDMSProjectPage() {
 
                 {/* Future Enhancements */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🔮 Future Enhancements</h2>
+                    <h2 className="text-3xl font-bold text-black">Future Enhancements</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         The EDMS is designed with extensibility in mind. Future enhancements are planned across three phases to continuously improve functionality and user experience.
@@ -572,7 +572,7 @@ export default async function EDMSProjectPage() {
 
                 {/* Project Summary */}
                 <section id="status" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">📋 Project Summary</h2>
+                    <h2 className="text-3xl font-bold text-black">Project Summary</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         The EDMS project demonstrates enterprise-level software engineering skills and showcases how to build, deploy, and maintain production-ready applications. This comprehensive system combines modern web technologies with robust security practices and scalable architecture.
@@ -580,8 +580,8 @@ export default async function EDMSProjectPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🛠️</span> Technical Skills Demonstrated
+                            <h3 className="font-semibold text-lg mb-3">
+                                Technical Skills Demonstrated
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• Full-stack development with modern technologies</li>
@@ -593,8 +593,8 @@ export default async function EDMSProjectPage() {
                             </ul>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                                <span>🏗️</span> Architecture Decisions
+                            <h3 className="font-semibold text-lg mb-3">
+                                Architecture Decisions
                             </h3>
                             <ul className="text-gray-600 space-y-2">
                                 <li>• Modular microservice-friendly design</li>

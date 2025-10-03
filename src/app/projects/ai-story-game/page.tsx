@@ -20,41 +20,41 @@ export default async function AIStoryGamePage() {
                 {/* Project Overview */}
                 <section id="overview" className="space-y-6">
                     <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
-                        <p className="text-purple-800 font-semibold mb-2">📋 Project Status: Planned</p>
+                        <p className="text-purple-800 font-semibold mb-2">Project Status: Planned</p>
                         <p className="text-purple-700">
                             This project is in the conceptual phase. We&apos;re designing game mechanics and exploring AI storytelling capabilities for an immersive interactive experience.
                         </p>
                     </div>
 
-                    <h2 className="text-3xl font-bold text-black">🎮 The Concept</h2>
+                    <h2 className="">The Concept</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         What if every time you played a game, the story was completely different? <strong>AI Story Text Game</strong> combines the creativity of artificial intelligence with the engagement of interactive fiction to create unique, personalized adventures that adapt to your choices in real-time.
                     </p>
 
                     <div className="bg-gradient-to-r from-pink-50 to-purple-50 p-8 rounded-lg border border-pink-200">
-                        <h3 className="text-2xl font-bold mb-4 text-pink-800">✨ What Makes This Unique?</h3>
+                        <h3 className="">What Makes This Unique?</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="space-y-2">
-                                <h4 className="font-semibold text-pink-700">🎭 Dynamic Storytelling</h4>
+                                <h4 className="">Dynamic Storytelling</h4>
                                 <p className="text-pink-600 text-sm">
                                     AI generates unique narratives on-the-fly, ensuring no two playthroughs are ever the same
                                 </p>
                             </div>
                             <div className="space-y-2">
-                                <h4 className="font-semibold text-pink-700">🌳 Branching Paths</h4>
+                                <h4 className="">Branching Paths</h4>
                                 <p className="text-pink-600 text-sm">
                                     Your choices genuinely matter, with AI creating new story branches based on your decisions
                                 </p>
                             </div>
                             <div className="space-y-2">
-                                <h4 className="font-semibold text-pink-700">👥 Character Depth</h4>
+                                <h4 className="">Character Depth</h4>
                                 <p className="text-pink-600 text-sm">
                                     NPCs remember your actions and develop relationships that evolve throughout the game
                                 </p>
                             </div>
                             <div className="space-y-2">
-                                <h4 className="font-semibold text-pink-700">🎪 Multiple Genres</h4>
+                                <h4 className="">Multiple Genres</h4>
                                 <p className="text-pink-600 text-sm">
                                     From fantasy adventures to sci-fi mysteries, explore different worlds and storylines
                                 </p>
@@ -65,7 +65,7 @@ export default async function AIStoryGamePage() {
 
                 {/* Why This Matters */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">💡 The Vision Behind It</h2>
+                    <h2 className="">The Vision Behind It</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Traditional text-based games follow predetermined paths, limiting replayability and player agency. AI Story Text Game reimagines interactive fiction by:
@@ -73,21 +73,21 @@ export default async function AIStoryGamePage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <div className="text-3xl mb-3">🎨</div>
+                            
                             <h3 className="font-semibold text-lg mb-2">Infinite Creativity</h3>
                             <p className="text-gray-600 text-sm">
                                 AI generates endless story possibilities, making each playthrough a fresh experience
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <div className="text-3xl mb-3">🎯</div>
+                            
                             <h3 className="font-semibold text-lg mb-2">True Player Agency</h3>
                             <p className="text-gray-600 text-sm">
                                 Your choices shape the narrative in meaningful ways, not just selecting from pre-written options
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <div className="text-3xl mb-3">🌟</div>
+                            
                             <h3 className="font-semibold text-lg mb-2">Accessibility</h3>
                             <p className="text-gray-600 text-sm">
                                 Text-based format makes gaming accessible to everyone, including visually impaired players
@@ -98,7 +98,7 @@ export default async function AIStoryGamePage() {
 
                 {/* Planned Technology */}
                 <section id="technology" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🔧 Technology Vision</h2>
+                    <h2 className="">Technology Vision</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         We&apos;re planning to use cutting-edge AI and modern web technologies to create a seamless gaming experience:
@@ -150,12 +150,12 @@ export default async function AIStoryGamePage() {
 
                 {/* Key Features */}
                 <section id="features" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">✨ Planned Game Features</h2>
+                    <h2 className="">Planned Game Features</h2>
 
                     <div className="space-y-4">
                         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
                             <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                                <span>📖</span> Adaptive Narratives
+                                Adaptive Narratives
                             </h3>
                             <p className="text-gray-600">
                                 AI continuously generates story content that responds to your actions, creating a living, breathing world that evolves with your choices.
@@ -164,7 +164,7 @@ export default async function AIStoryGamePage() {
 
                         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-pink-500">
                             <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                                <span>💬</span> Natural Language Input
+                                Natural Language Input
                             </h3>
                             <p className="text-gray-600">
                                 Type your actions naturally—no need to memorize commands. The AI understands context and intent, making interaction intuitive.
@@ -173,7 +173,7 @@ export default async function AIStoryGamePage() {
 
                         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
                             <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                                <span>👤</span> Character Relationships
+                                Character Relationships
                             </h3>
                             <p className="text-gray-600">
                                 Build relationships with characters who remember your past interactions and react accordingly, creating emotional investment in the story.
@@ -182,7 +182,7 @@ export default async function AIStoryGamePage() {
 
                         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
                             <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                                <span>💾</span> Save & Share
+                                Save & Share
                             </h3>
                             <p className="text-gray-600">
                                 Save your progress at any point and share your unique story outcomes with the community, comparing different narrative paths.
@@ -193,7 +193,7 @@ export default async function AIStoryGamePage() {
 
                 {/* Design Challenges */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🎯 Design Challenges</h2>
+                    <h2 className="">Design Challenges</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Creating an AI-powered game that&apos;s both creative and coherent requires solving unique challenges:
@@ -201,25 +201,25 @@ export default async function AIStoryGamePage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
-                            <h3 className="font-semibold text-yellow-800 mb-2">✓ Story Coherence</h3>
+                            <h3 className="font-semibold text-yellow-800 mb-2"> Story Coherence</h3>
                             <p className="text-yellow-700 text-sm">
                                 Maintaining narrative consistency across branching paths while allowing AI freedom to create
                             </p>
                         </div>
                         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                            <h3 className="font-semibold text-blue-800 mb-2">✓ Response Time</h3>
+                            <h3 className="font-semibold text-blue-800 mb-2"> Response Time</h3>
                             <p className="text-blue-700 text-sm">
                                 Generating AI responses quickly enough to maintain gameplay flow and player immersion
                             </p>
                         </div>
                         <div className="bg-purple-50 p-6 rounded-lg border border-purple-200">
-                            <h3 className="font-semibold text-purple-800 mb-2">✓ Game Balance</h3>
+                            <h3 className="font-semibold text-purple-800 mb-2"> Game Balance</h3>
                             <p className="text-purple-700 text-sm">
                                 Ensuring AI-generated challenges are appropriately difficult and rewarding
                             </p>
                         </div>
                         <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-                            <h3 className="font-semibold text-green-800 mb-2">✓ Player Experience</h3>
+                            <h3 className="font-semibold text-green-800 mb-2"> Player Experience</h3>
                             <p className="text-green-700 text-sm">
                                 Creating an interface that&apos;s engaging for text-based gameplay in a visual world
                             </p>
@@ -229,10 +229,10 @@ export default async function AIStoryGamePage() {
 
                 {/* Timeline & Next Steps */}
                 <section id="status" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">📅 Development Roadmap</h2>
+                    <h2 className="text-3xl font-bold text-black">Development Roadmap</h2>
 
                     <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-lg border border-purple-200">
-                        <h3 className="text-2xl font-bold mb-6 text-purple-800">🚀 From Concept to Reality</h3>
+                        <h3 className="">From Concept to Reality</h3>
 
                         <div className="space-y-4">
                             <div className="flex items-start gap-4">

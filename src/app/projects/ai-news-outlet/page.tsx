@@ -20,41 +20,41 @@ export default async function AINewsOutletPage() {
                 {/* Project Overview */}
                 <section id="overview" className="space-y-6">
                     <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-                        <p className="text-blue-800 font-semibold mb-2">📋 Project Status: Planned</p>
+                        <p className="text-blue-800 font-semibold mb-2">Project Status: Planned</p>
                         <p className="text-blue-700">
                             This project is currently in the planning phase. We&apos;re designing the architecture and defining requirements for an innovative AI-powered news platform.
                         </p>
                     </div>
 
-                    <h2 className="text-3xl font-bold text-black">🎯 The Vision</h2>
+                    <h2 className="">The Vision</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Imagine a news platform that operates 24/7, delivering personalized news broadcasts with AI-generated anchors and professional production quality—all automated. <strong>AI News Outlet</strong> aims to revolutionize how news content is created and consumed by leveraging cutting-edge artificial intelligence.
                     </p>
 
                     <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-lg border border-purple-200">
-                        <h3 className="text-2xl font-bold mb-4 text-purple-800">✨ What Makes This Special?</h3>
+                        <h3 className="">What Makes This Special?</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="space-y-2">
-                                <h4 className="font-semibold text-purple-700">🤖 AI-Generated Everything</h4>
+                                <h4 className="">AI-Generated Everything</h4>
                                 <p className="text-purple-600 text-sm">
                                     From script writing to anchor avatars, the entire news production process is powered by AI
                                 </p>
                             </div>
                             <div className="space-y-2">
-                                <h4 className="font-semibold text-purple-700">🌍 Global Reach</h4>
+                                <h4 className="">Global Reach</h4>
                                 <p className="text-purple-600 text-sm">
                                     Multi-language support allows news to reach audiences worldwide in their native languages
                                 </p>
                             </div>
                             <div className="space-y-2">
-                                <h4 className="font-semibold text-purple-700">⚡ Real-Time Updates</h4>
+                                <h4 className="">Real-Time Updates</h4>
                                 <p className="text-purple-600 text-sm">
                                     Automated content generation means news is always current and relevant
                                 </p>
                             </div>
                             <div className="space-y-2">
-                                <h4 className="font-semibold text-purple-700">🎨 Professional Quality</h4>
+                                <h4 className="">Professional Quality</h4>
                                 <p className="text-purple-600 text-sm">
                                     AI-generated anchors and production quality rival traditional broadcast news
                                 </p>
@@ -65,7 +65,7 @@ export default async function AINewsOutletPage() {
 
                 {/* Why This Matters */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">💡 Why This Matters</h2>
+                    <h2 className="">Why This Matters</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         The traditional news industry faces challenges with production costs, time constraints, and limited personalization. AI News Outlet addresses these pain points by:
@@ -73,21 +73,21 @@ export default async function AINewsOutletPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <div className="text-3xl mb-3">💰</div>
+                            
                             <h3 className="font-semibold text-lg mb-2">Cost Efficiency</h3>
                             <p className="text-gray-600 text-sm">
                                 Dramatically reduces production costs by automating the entire news creation workflow
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <div className="text-3xl mb-3">⚡</div>
+                            <div className="text-3xl mb-3"></div>
                             <h3 className="font-semibold text-lg mb-2">Speed</h3>
                             <p className="text-gray-600 text-sm">
                                 Generates news broadcasts in minutes instead of hours, keeping audiences informed faster
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            <div className="text-3xl mb-3">🎯</div>
+                            
                             <h3 className="font-semibold text-lg mb-2">Personalization</h3>
                             <p className="text-gray-600 text-sm">
                                 Tailors content to individual interests and demographics for better engagement
@@ -98,7 +98,7 @@ export default async function AINewsOutletPage() {
 
                 {/* Planned Technology */}
                 <section id="technology" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🔧 Planned Technology Stack</h2>
+                    <h2 className="">Planned Technology Stack</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         We&apos;re planning to leverage state-of-the-art AI services and modern web technologies:
@@ -150,12 +150,12 @@ export default async function AINewsOutletPage() {
 
                 {/* Key Features */}
                 <section id="features" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">✨ Planned Features</h2>
+                    <h2 className="">Planned Features</h2>
 
                     <div className="space-y-4">
                         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
                             <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                                <span>📝</span> Intelligent Script Generation
+                                Intelligent Script Generation
                             </h3>
                             <p className="text-gray-600">
                                 AI analyzes current events from multiple sources and generates cohesive, engaging news scripts with proper context and journalistic quality.
@@ -164,7 +164,7 @@ export default async function AINewsOutletPage() {
 
                         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
                             <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                                <span>🎭</span> Realistic AI Anchors
+                                Realistic AI Anchors
                             </h3>
                             <p className="text-gray-600">
                                 AI-generated news anchors with natural expressions, gestures, and speech patterns that feel authentic and professional.
@@ -173,7 +173,7 @@ export default async function AINewsOutletPage() {
 
                         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
                             <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                                <span>🌐</span> Multi-Language Support
+                                Multi-Language Support
                             </h3>
                             <p className="text-gray-600">
                                 Automatically translate and localize content for global audiences, breaking down language barriers in news consumption.
@@ -182,7 +182,7 @@ export default async function AINewsOutletPage() {
 
                         <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-orange-500">
                             <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                                <span>🔄</span> Automated Publishing
+                                Automated Publishing
                             </h3>
                             <p className="text-gray-600">
                                 Scheduled broadcast generation and distribution across multiple platforms, ensuring consistent content delivery.
@@ -193,7 +193,7 @@ export default async function AINewsOutletPage() {
 
                 {/* Challenges & Considerations */}
                 <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">🎯 Key Challenges to Address</h2>
+                    <h2 className="">Key Challenges to Address</h2>
 
                     <p className="text-lg leading-relaxed text-gray-700">
                         Building an AI-powered news platform comes with unique challenges that we&apos;re prepared to tackle:
@@ -201,25 +201,25 @@ export default async function AINewsOutletPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-red-50 p-6 rounded-lg border border-red-200">
-                            <h3 className="font-semibold text-red-800 mb-2">✓ Factual Accuracy</h3>
+                            <h3 className="font-semibold text-red-800 mb-2"> Factual Accuracy</h3>
                             <p className="text-red-700 text-sm">
                                 Ensuring AI-generated content maintains journalistic integrity and fact-checks all information before broadcast
                             </p>
                         </div>
                         <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
-                            <h3 className="font-semibold text-yellow-800 mb-2">✓ Natural Delivery</h3>
+                            <h3 className="font-semibold text-yellow-800 mb-2"> Natural Delivery</h3>
                             <p className="text-yellow-700 text-sm">
                                 Creating AI voices and avatars that sound natural and maintain viewer engagement throughout broadcasts
                             </p>
                         </div>
                         <div className="bg-purple-50 p-6 rounded-lg border border-purple-200">
-                            <h3 className="font-semibold text-purple-800 mb-2">✓ Ethical AI Use</h3>
+                            <h3 className="font-semibold text-purple-800 mb-2"> Ethical AI Use</h3>
                             <p className="text-purple-700 text-sm">
                                 Transparent disclosure of AI involvement and responsible use of synthetic media technologies
                             </p>
                         </div>
                         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                            <h3 className="font-semibold text-blue-800 mb-2">✓ Scalability</h3>
+                            <h3 className="font-semibold text-blue-800 mb-2"> Scalability</h3>
                             <p className="text-blue-700 text-sm">
                                 Designing infrastructure that can handle multiple broadcasts, languages, and thousands of concurrent viewers
                             </p>
@@ -229,10 +229,10 @@ export default async function AINewsOutletPage() {
 
                 {/* Timeline & Next Steps */}
                 <section id="status" className="space-y-6">
-                    <h2 className="text-3xl font-bold text-black">📅 Project Timeline</h2>
+                    <h2 className="text-3xl font-bold text-black">Project Timeline</h2>
 
                     <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg border border-blue-200">
-                        <h3 className="text-2xl font-bold mb-6 text-blue-800">🚀 What&apos;s Next?</h3>
+                        <h3 className="">What&apos;s Next?</h3>
 
                         <div className="space-y-4">
                             <div className="flex items-start gap-4">
