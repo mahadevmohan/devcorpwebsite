@@ -8,6 +8,13 @@ export default async function AINewsOutletPage() {
     // Estimated read time: ~1200 words / 225 wpm = 6 minutes
     const readTime = 6;
 
+    const tableOfContents = [
+        { id: "overview", label: "Project Overview" },
+        { id: "technology", label: "Architecture & Tech Stack" },
+        { id: "features", label: "Planned Features" },
+        { id: "status", label: "Current Status" }
+    ];
+
     return (
         <BlogLayout
             title={meta.title}
@@ -15,6 +22,7 @@ export default async function AINewsOutletPage() {
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
             publishedAt={meta.publishedAt}
             readTime={readTime}
+            tableOfContents={tableOfContents}
         >
             <div className="space-y-12">
                 {/* Project Overview */}
@@ -73,7 +81,7 @@ export default async function AINewsOutletPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            
+
                             <h3 className="font-semibold text-lg mb-2">Cost Efficiency</h3>
                             <p className="text-gray-600 text-sm">
                                 Dramatically reduces production costs by automating the entire news creation workflow
@@ -87,7 +95,7 @@ export default async function AINewsOutletPage() {
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            
+
                             <h3 className="font-semibold text-lg mb-2">Personalization</h3>
                             <p className="text-gray-600 text-sm">
                                 Tailors content to individual interests and demographics for better engagement

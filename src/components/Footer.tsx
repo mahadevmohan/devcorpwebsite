@@ -23,7 +23,6 @@ export default function Footer() {
             <Link
               href="https://github.com/mahadevmohan/devcorpwebsite"
               aria-label="GitHub"
-              target="_blank"
               className="text-davy-gray hover:text-black transition-colors duration-200"
             >
               <Github size={18} />
@@ -31,7 +30,6 @@ export default function Footer() {
             <Link
               href="https://www.linkedin.com/company/devcorptech/"
               aria-label="LinkedIn"
-              target="_blank"
               className="text-davy-gray hover:text-black transition-colors duration-200"
             >
               <Linkedin size={18} />
@@ -39,7 +37,6 @@ export default function Footer() {
             <Link
               href="https://www.youtube.com/@devcorptech"
               aria-label="YouTube"
-              target="_blank"
               className="text-davy-gray hover:text-black transition-colors duration-200"
             >
               <Youtube size={18} />
@@ -106,8 +103,6 @@ export default function Footer() {
             <li>
               <a
                 href="https://github.com/mahadevmohan/devcorpwebsite"
-                target="_blank"
-                rel="noopener noreferrer"
                 className={`${item} flex items-center gap-1`}
               >
                 View Source Code

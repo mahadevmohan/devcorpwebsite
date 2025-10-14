@@ -26,7 +26,7 @@ export default function ProjectCard(props: ProjectCardProps) {
       </div>
       <div className="mt-4 flex gap-2">
         {props.demoUrl && props.status === "shipped" ? (
-          <a className="px-3 py-1 rounded bg-black text-seasalt text-sm hover:bg-black/90 transition-colors" href={props.demoUrl} target="_blank" rel="noreferrer">Demo</a>
+          <a className="px-3 py-1 rounded bg-black text-seasalt text-sm hover:bg-black/90 transition-colors" href={props.demoUrl}>Demo</a>
         ) : null}
         <Link className="px-3 py-1 rounded bg-black text-seasalt text-sm hover:bg-black/90 transition-colors" href={`/projects/${props.slug}`}>Read More</Link>
       </div>

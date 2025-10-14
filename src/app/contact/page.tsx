@@ -37,7 +37,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-black mb-1">Email</h3>
-                    <p className="text-davy-gray">devcorptechllc@gmail.com</p>
+                    <p className="text-davy-gray">
+                      <a href="mailto:devcorptechllc@gmail.com" className="text-davy-gray hover:text-black underline transition-colors">
+                        devcorptechllc@gmail.com
+                      </a>
+                    </p>
                     <p className="text-sm text-silver">We&apos;ll get back to you within 24 hours</p>
                   </div>
                 </div>
@@ -74,14 +78,14 @@ export default function ContactPage() {
               <div className="pt-8 border-t border-neutral-200">
                 <h3 className="font-semibold text-black mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <a href="https://www.linkedin.com/company/devcorptech/" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/company/devcorptech/" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors">
                     <Linkedin className="w-5 h-5 text-davy-gray" />
                   </a>
 
-                  <a href="https://github.com/devcorptech?tab=stars" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/devcorptech?tab=stars" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors">
                     <Github className="w-5 h-5 text-davy-gray" />
                   </a>
-                  <a href="https://www.youtube.com/@devcorptech" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.youtube.com/@devcorptech" className="w-10 h-10 bg-alabaster rounded-lg flex items-center justify-center hover:bg-silver transition-colors">
                     <Youtube className="w-5 h-5 text-davy-gray" />
                   </a>
                 </div>

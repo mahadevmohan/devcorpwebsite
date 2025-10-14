@@ -10,6 +10,13 @@ export default async function WhatIfMarketPage() {
     // Estimated read time: ~1800 words / 225 wpm = 8 minutes
     const readTime = 8;
 
+    const tableOfContents = [
+        { id: "overview", label: "Project Overview" },
+        { id: "status", label: "Current Status" },
+        { id: "technology", label: "Architecture & Tech Stack" },
+        { id: "features", label: "Planned Features" }
+    ];
+
     return (
         <BlogLayout
             title={meta.title}
@@ -17,6 +24,7 @@ export default async function WhatIfMarketPage() {
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
             publishedAt={meta.publishedAt}
             readTime={readTime}
+            tableOfContents={tableOfContents}
         >
             <div className="space-y-12">
                 {/* Introduction */}

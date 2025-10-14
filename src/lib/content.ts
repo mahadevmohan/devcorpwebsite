@@ -17,6 +17,7 @@ export const projectSchema = z.object({
   tags: z.array(z.string()).default([]),
   techStack: z.array(z.string()).default([]),
   demoUrl: z.string().url().optional(),
+  liveUrl: z.string().url().optional(),
   repoUrl: z.string().url().optional(),
   thumbnail: z.string().optional(),
   publishedAt: dateString.optional(),

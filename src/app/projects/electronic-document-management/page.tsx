@@ -8,6 +8,13 @@ export default async function EDMSProjectPage() {
     // Estimated read time: ~2700 words / 225 wpm = 12 minutes
     const readTime = 12;
 
+    const tableOfContents = [
+        { id: "overview", label: "Project Overview" },
+        { id: "technology", label: "Architecture & Tech Stack" },
+        { id: "features", label: "File Management System" },
+        { id: "status", label: "Project Summary" }
+    ];
+
     return (
         <BlogLayout
             title={meta.title}
@@ -15,6 +22,7 @@ export default async function EDMSProjectPage() {
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
             publishedAt={meta.publishedAt}
             readTime={readTime}
+            tableOfContents={tableOfContents}
         >
             <div className="space-y-12">
                 {/* Introduction */}
@@ -608,7 +616,7 @@ export default async function EDMSProjectPage() {
                     </div>
 
                     <Callout type="success" title="Production Ready">
-                        The EDMS is currently deployed and serving real users with enterprise-grade security, performance, and reliability. Visit <strong><a href="https://edms-blue.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">edms-blue.vercel.app</a></strong> to explore the live system.
+                        The EDMS is currently deployed and serving real users with enterprise-grade security, performance, and reliability. Visit <strong><a href="https://edms-blue.vercel.app" className="text-blue-600 hover:text-blue-800 underline">edms-blue.vercel.app</a></strong> to explore the live system.
                     </Callout>
                 </section>
             </div>

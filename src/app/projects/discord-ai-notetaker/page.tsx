@@ -8,6 +8,13 @@ export default async function DiscordAINotetakerPage() {
     // Estimated read time: ~1400 words / 225 wpm = 7 minutes
     const readTime = 7;
 
+    const tableOfContents = [
+        { id: "overview", label: "Project Overview" },
+        { id: "technology", label: "Architecture & Tech Stack" },
+        { id: "features", label: "Planned Features" },
+        { id: "status", label: "Current Status" }
+    ];
+
     return (
         <BlogLayout
             title={meta.title}
@@ -15,6 +22,7 @@ export default async function DiscordAINotetakerPage() {
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
             publishedAt={meta.publishedAt}
             readTime={readTime}
+            tableOfContents={tableOfContents}
         >
             <div className="space-y-12">
                 {/* Project Overview */}
@@ -73,21 +81,21 @@ export default async function DiscordAINotetakerPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            
+
                             <h3 className="font-semibold text-lg mb-2">Productivity Boost</h3>
                             <p className="text-gray-600 text-sm">
                                 Never waste time asking &ldquo;What did we decide?&rdquo; again. All decisions are documented automatically.
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            
+
                             <h3 className="font-semibold text-lg mb-2">Team Alignment</h3>
                             <p className="text-gray-600 text-sm">
                                 Members who missed the call can quickly catch up with AI-generated summaries and key points.
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            
+
                             <h3 className="font-semibold text-lg mb-2">Knowledge Base</h3>
                             <p className="text-gray-600 text-sm">
                                 Build a searchable archive of discussions, decisions, and insights over time.

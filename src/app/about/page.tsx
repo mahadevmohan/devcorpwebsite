@@ -41,8 +41,6 @@ export default function AboutPage() {
                 <div className="flex flex-wrap items-center gap-3 pt-6">
                   <a
                     href="/Resume/OfficialResume2025.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-black text-seasalt rounded-md hover:bg-davy-gray transition-all duration-200 shadow-sm hover:shadow-md"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,8 +50,6 @@ export default function AboutPage() {
                   </a>
                   <a
                     href="https://www.linkedin.com/in/mahadev-mohan-235ba6216/"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-[#0077B5] text-white rounded-md hover:bg-[#006399] transition-all duration-200 shadow-sm hover:shadow-md"
                   >
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -63,8 +59,6 @@ export default function AboutPage() {
                   </a>
                   <a
                     href="https://github.com/mahadevmohan"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-[#24292e] text-white rounded-md hover:bg-[#1a1e22] transition-all duration-200 shadow-sm hover:shadow-md"
                   >
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -125,8 +119,6 @@ export default function AboutPage() {
                 <div className="flex flex-wrap items-center gap-3 pt-6">
                   <a
                     href="/Resume/ParamrajSinghMachre_Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-black text-seasalt rounded-md hover:bg-davy-gray transition-all duration-200 shadow-sm hover:shadow-md"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -136,8 +128,6 @@ export default function AboutPage() {
                   </a>
                   <a
                     href="https://www.linkedin.com/in/pmachre/"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-[#0077B5] text-white rounded-md hover:bg-[#006399] transition-all duration-200 shadow-sm hover:shadow-md"
                   >
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -147,8 +137,6 @@ export default function AboutPage() {
                   </a>
                   <a
                     href="https://github.com/bennytobby"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-[#24292e] text-white rounded-md hover:bg-[#1a1e22] transition-all duration-200 shadow-sm hover:shadow-md"
                   >
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

@@ -3,6 +3,11 @@
 import { ReactNode } from "react";
 import SmartBackButton from "./SmartBackButton";
 
+interface TableOfContentsItem {
+    id: string;
+    label: string;
+}
+
 interface BlogLayoutProps {
     title: string;
     excerpt?: string;
@@ -10,6 +15,7 @@ interface BlogLayoutProps {
     publishedAt: string;
     readTime?: number;
     children: ReactNode;
+    tableOfContents?: TableOfContentsItem[];
 }
 
 export default function BlogLayout({
@@ -18,7 +24,8 @@ export default function BlogLayout({
     author,
     publishedAt,
     readTime,
-    children
+    children,
+    tableOfContents
 }: BlogLayoutProps) {
     return (
         <main className="min-h-screen bg-seasalt">
@@ -98,39 +105,26 @@ export default function BlogLayout({
                         </article>
 
                         {/* Sidebar */}
-                        <aside className="lg:col-span-1">
-                            <div className="sticky top-8">
-                                <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-                                    <h3 className="font-semibold text-gray-900 mb-4">Table of Contents</h3>
-                                    <nav className="space-y-2">
-                                        <button
-                                            onClick={() => document.getElementById('overview')?.scrollIntoView({ behavior: 'smooth' })}
-                                            className="block w-full text-left text-sm text-gray-600 hover:text-black transition-colors cursor-pointer"
-                                        >
-                                            Project Overview
-                                        </button>
-                                        <button
-                                            onClick={() => document.getElementById('technology')?.scrollIntoView({ behavior: 'smooth' })}
-                                            className="block w-full text-left text-sm text-gray-600 hover:text-black transition-colors cursor-pointer"
-                                        >
-                                            Architecture & Tech Stack
-                                        </button>
-                                        <button
-                                            onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
-                                            className="block w-full text-left text-sm text-gray-600 hover:text-black transition-colors cursor-pointer"
-                                        >
-                                            File Management System
-                                        </button>
-                                        <button
-                                            onClick={() => document.getElementById('status')?.scrollIntoView({ behavior: 'smooth' })}
-                                            className="block w-full text-left text-sm text-gray-600 hover:text-black transition-colors cursor-pointer"
-                                        >
-                                            Project Summary
-                                        </button>
-                                    </nav>
+                        {tableOfContents && tableOfContents.length > 0 && (
+                            <aside className="lg:col-span-1">
+                                <div className="sticky top-8">
+                                    <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                                        <h3 className="font-semibold text-gray-900 mb-4">Table of Contents</h3>
+                                        <nav className="space-y-2">
+                                            {tableOfContents.map((item) => (
+                                                <button
+                                                    key={item.id}
+                                                    onClick={() => document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' })}
+                                                    className="block w-full text-left text-sm text-gray-600 hover:text-black transition-colors cursor-pointer"
+                                                >
+                                                    {item.label}
+                                                </button>
+                                            ))}
+                                        </nav>
+                                    </div>
                                 </div>
-                            </div>
-                        </aside>
+                            </aside>
+                        )}
                     </div>
                 </div>
             </section>

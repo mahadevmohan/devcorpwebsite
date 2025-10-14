@@ -9,6 +9,13 @@ export default async function DevcorpWebsitePage() {
     // Estimated read time: ~3400 words / 225 wpm = 15 minutes
     const readTime = 15;
 
+    const tableOfContents = [
+        { id: "overview", label: "Project Overview" },
+        { id: "technology", label: "Architecture & Tech Stack" },
+        { id: "features", label: "File Management System" },
+        { id: "status", label: "Project Summary" }
+    ];
+
     return (
         <BlogLayout
             title={meta.title}
@@ -16,6 +23,7 @@ export default async function DevcorpWebsitePage() {
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
             publishedAt={meta.publishedAt}
             readTime={readTime}
+            tableOfContents={tableOfContents}
         >
             <div className="space-y-12">
                 {/* Introduction */}
@@ -29,7 +37,7 @@ export default async function DevcorpWebsitePage() {
                     </p>
 
                     <Callout type="success" title="Live and Production-Ready">
-                        Visit <strong><a href="https://devcorpwebsite.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">devcorpwebsite.vercel.app</a></strong> to explore the live site and experience all the features we&apos;ll discuss in this article.
+                        Visit <strong><a href="https://devcorpwebsite.vercel.app" className="text-blue-600 hover:text-blue-800 underline">devcorpwebsite.vercel.app</a></strong> to explore the live site and experience all the features we&apos;ll discuss in this article.
                     </Callout>
                 </section>
 
@@ -333,7 +341,7 @@ export const projectSchema = z.object({
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                 Solution: Built a Zod-powered schema system that validates content at build time while generating TypeScript types automatically
+                                Solution: Built a Zod-powered schema system that validates content at build time while generating TypeScript types automatically
                             </p>
                         </div>
 
@@ -364,7 +372,7 @@ export const projectSchema = z.object({
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                 Solution: Created a five-color palette with CSS variables, ensuring every page feels cohesive while maintaining visual hierarchy
+                                Solution: Created a five-color palette with CSS variables, ensuring every page feels cohesive while maintaining visual hierarchy
                             </p>
                         </div>
 
@@ -394,7 +402,7 @@ export const projectSchema = z.object({
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                 Solution: Server-first architecture with selective client-side enhancements, achieving 95+ Lighthouse scores
+                                Solution: Server-first architecture with selective client-side enhancements, achieving 95+ Lighthouse scores
                             </p>
                         </div>
 
@@ -431,7 +439,7 @@ const SmartBackButton = () => {
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                 Solution: Built a SmartBackButton that tracks actual navigation patterns and table of contents that scrolls without polluting browser history
+                                Solution: Built a SmartBackButton that tracks actual navigation patterns and table of contents that scrolls without polluting browser history
                             </p>
                         </div>
 
@@ -461,7 +469,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
                                 </pre>
                             </div>
                             <p className="text-green-600 font-semibold">
-                                 Solution: Built extensible schemas with optional fields, dynamic sorting algorithms, and type-safe architecture that grows with requirements
+                                Solution: Built extensible schemas with optional fields, dynamic sorting algorithms, and type-safe architecture that grows with requirements
                             </p>
                         </div>
                     </div>
@@ -631,7 +639,7 @@ blogExcerpt: z.string().optional(), // Just add to schema
                             This project showcases our ability to build production-ready applications that are not only functional but also maintainable, scalable, and delightful to use. It represents our commitment to code quality, user experience, and continuous improvement.
                         </p>
                         <p className="text-green-700 font-semibold">
-                            Explore the live site at <a href="https://devcorpwebsite.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">devcorpwebsite.vercel.app</a> and see these features in action!
+                            Explore the live site at <a href="https://devcorpwebsite.vercel.app" className="text-blue-600 hover:text-blue-800 underline">devcorpwebsite.vercel.app</a> and see these features in action!
                         </p>
                     </div>
 

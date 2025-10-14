@@ -8,6 +8,13 @@ export default async function AIStoryGamePage() {
     // Estimated read time: ~1150 words / 225 wpm = 6 minutes
     const readTime = 6;
 
+    const tableOfContents = [
+        { id: "overview", label: "Project Overview" },
+        { id: "technology", label: "Architecture & Tech Stack" },
+        { id: "features", label: "Planned Features" },
+        { id: "status", label: "Current Status" }
+    ];
+
     return (
         <BlogLayout
             title={meta.title}
@@ -15,6 +22,7 @@ export default async function AIStoryGamePage() {
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
             publishedAt={meta.publishedAt}
             readTime={readTime}
+            tableOfContents={tableOfContents}
         >
             <div className="space-y-12">
                 {/* Project Overview */}
@@ -73,21 +81,21 @@ export default async function AIStoryGamePage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            
+
                             <h3 className="font-semibold text-lg mb-2">Infinite Creativity</h3>
                             <p className="text-gray-600 text-sm">
                                 AI generates endless story possibilities, making each playthrough a fresh experience
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            
+
                             <h3 className="font-semibold text-lg mb-2">True Player Agency</h3>
                             <p className="text-gray-600 text-sm">
                                 Your choices shape the narrative in meaningful ways, not just selecting from pre-written options
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                            
+
                             <h3 className="font-semibold text-lg mb-2">Accessibility</h3>
                             <p className="text-gray-600 text-sm">
                                 Text-based format makes gaming accessible to everyone, including visually impaired players
