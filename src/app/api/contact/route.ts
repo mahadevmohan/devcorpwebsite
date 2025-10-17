@@ -14,7 +14,7 @@ const contactSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     // Check if email credentials are configured
-    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS || !process.env.EMAIL_FROM || !process.env.EMAIL_TO) {
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
       return NextResponse.json(
         { error: 'Contact service is currently unavailable. Please try again later or email us directly at devcorptechllc@gmail.com' },
         { status: 503 }
@@ -37,8 +37,8 @@ export async function POST(request: NextRequest) {
 
     // Email content
     const mailOptions = {
-      from: process.env.EMAIL_FROM,
-      to: process.env.EMAIL_TO,
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
       subject: `Contact Form: ${validatedData.subject} - ${validatedData.firstName} ${validatedData.lastName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
