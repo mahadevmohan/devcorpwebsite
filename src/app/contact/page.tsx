@@ -1,6 +1,98 @@
+"use client";
+
 import { Github, Youtube, Linkedin } from "lucide-react";
+import { useState } from "react";
+
+interface FormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  subject: string;
+  message: string;
+}
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState<FormData>({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: 'success',
+          message: 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.'
+        });
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        const errorData = await response.json();
+
+        // Handle service unavailable (503)
+        if (response.status === 503) {
+          setSubmitStatus({
+            type: 'error',
+            message: errorData.error || 'Contact service is temporarily unavailable. Please email us directly at devcorptechllc@gmail.com'
+          });
+        }
+        // Handle validation errors specifically
+        else if (errorData.details && Array.isArray(errorData.details)) {
+          const validationErrors = errorData.details.map((error: { message: string }) => error.message).join(', ');
+          setSubmitStatus({
+            type: 'error',
+            message: `Validation failed: ${validationErrors}`
+          });
+        } else {
+          setSubmitStatus({
+            type: 'error',
+            message: errorData.error || 'Failed to send message. Please try again.'
+          });
+        }
+      }
+    } catch {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Network error. Please check your connection and try again.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -95,7 +187,18 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-seasalt rounded-lg p-8 shadow-sm border border-davy-gray">
               <h3 className="text-2xl font-bold text-black mb-6">Send us a Message</h3>
-              <form className="space-y-6">
+
+              {/* Status Messages */}
+              {submitStatus.type && (
+                <div className={`mb-6 p-4 rounded-md ${submitStatus.type === 'success'
+                  ? 'bg-green-50 border border-green-200 text-green-800'
+                  : 'bg-red-50 border border-red-200 text-red-800'
+                  }`}>
+                  {submitStatus.message}
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-davy-gray mb-2">
@@ -105,6 +208,9 @@ export default function ContactPage() {
                       type="text"
                       id="firstName"
                       name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      required
                       className="w-full px-4 py-3 border border-davy-gray rounded-md focus:outline-none focus:ring-2 focus:ring-davy-gray text-black"
                       placeholder="John"
                     />
@@ -117,6 +223,9 @@ export default function ContactPage() {
                       type="text"
                       id="lastName"
                       name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      required
                       className="w-full px-4 py-3 border border-davy-gray rounded-md focus:outline-none focus:ring-2 focus:ring-davy-gray text-black"
                       placeholder="Doe"
                     />
@@ -131,6 +240,9 @@ export default function ContactPage() {
                     type="email"
                     id="email"
                     name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
                     className="w-full px-4 py-3 border border-davy-gray rounded-md focus:outline-none focus:ring-2 focus:ring-davy-gray text-black"
                     placeholder="john@example.com"
                   />
@@ -143,6 +255,9 @@ export default function ContactPage() {
                   <select
                     id="subject"
                     name="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    required
                     className="w-full px-4 py-3 border border-davy-gray rounded-md focus:outline-none focus:ring-2 focus:ring-davy-gray text-black"
                   >
                     <option value="">Select a topic</option>
@@ -162,6 +277,9 @@ export default function ContactPage() {
                     id="message"
                     name="message"
                     rows={6}
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required
                     className="w-full px-4 py-3 border border-davy-gray rounded-md focus:outline-none focus:ring-2 focus:ring-davy-gray text-black resize-vertical"
                     placeholder="Tell us about your project or question..."
                   ></textarea>
@@ -169,9 +287,10 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-black text-seasalt py-3 px-6 rounded-md hover:bg-davy-gray transition-colors font-medium"
+                  disabled={isSubmitting}
+                  className="w-full bg-black text-seasalt py-3 px-6 rounded-md hover:bg-davy-gray transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>
