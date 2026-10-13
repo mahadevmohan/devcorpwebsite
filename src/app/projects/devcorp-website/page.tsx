@@ -21,7 +21,6 @@ export default async function DevcorpWebsitePage() {
             title={meta.title}
             excerpt={meta.excerpt || undefined}
             author={meta.author || "Mahadev Mohan and Paramraj Singh Machre"}
-            publishedAt={meta.publishedAt}
             readTime={readTime}
             tableOfContents={tableOfContents}
         >
