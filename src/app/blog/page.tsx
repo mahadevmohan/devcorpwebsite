@@ -43,14 +43,6 @@ export default async function BlogIndexPage() {
                         {project && <StatusPill status={project.status} />}
                       </div>
                       <div className="flex items-center gap-4 text-sm text-silver">
-                        <time>
-                          {new Date(post.publishedAt).toLocaleDateString('en-US', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                          })}
-                        </time>
-                        <span>•</span>
                         <span>{post.readTime} min read</span>
                       </div>
                     </div>
