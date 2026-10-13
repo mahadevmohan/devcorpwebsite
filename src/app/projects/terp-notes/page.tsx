@@ -15,7 +15,6 @@ export default async function TerpNotesPage() {
         title: terpNotes.blogTitle || terpNotes.title,
         excerpt: terpNotes.blogExcerpt || terpNotes.summary,
         author: terpNotes.author || "Paramraj Singh Machre",
-        publishedAt: terpNotes.publishedAt || "2024-12-15",
         readTime: typeof terpNotes.readTime === 'number' ? terpNotes.readTime : 12
     };
 
