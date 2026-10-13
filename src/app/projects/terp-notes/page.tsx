@@ -36,7 +36,6 @@ export default async function TerpNotesPage() {
             title={meta.title}
             excerpt={meta.excerpt}
             author={meta.author}
-            publishedAt={meta.publishedAt}
             readTime={meta.readTime}
             tableOfContents={tableOfContents}
         >
